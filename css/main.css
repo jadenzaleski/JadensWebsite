@@ -1,0 +1,45 @@
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+html {
+    background-color: var(--jaden-black);
+}
+body {
+    background-color: var(--jaden-black);
+}
+.navbar-main {
+    background-color: var(--jaden-blue);
+}
+.navbar-text {
+    color: var(--jaden-black);
+}
+.nav-item a{
+    color: var(--jaden-black);
+}
+.login-button:hover svg {
+    color: var(--jaden-gray);
+}
+main {
+    background-color: var(--jaden-white);
+    box-shadow: rgba(0, 0, 0, 1) 0px 30px 90px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+footer {
+    background-color: var(--jaden-white);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 30px 90px;
+}
+.social-button-link {
+    height: 52px;
+    width: 52px;
+    padding: 10px 12px 12px 11px;
+    color: var(--jaden-black);
+    border: 3px solid var(--jaden-black);
+    outline-color: var(--jaden-black);
+}
+
+.social-button-link:hover {
+    color: var(--jaden-blue);
+}
