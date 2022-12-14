@@ -26,6 +26,10 @@ body {
     color: var(--jaden-gray);
 }
 
+.login-button:active {
+    border: none;
+}
+
 main {
     background-color: var(--jaden-white);
     box-shadow: rgba(0, 0, 0, 1) 0 30px 90px;
