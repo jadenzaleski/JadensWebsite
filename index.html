@@ -34,36 +34,54 @@
                 <li class="nav-item">
                     <a class="nav-link active fw-bolder" aria-current="page" href="#">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
-                        Dropdown</a>
+                        Projects</a>
                     <ul class="dropdown-menu">
+                        <li><h6 class="dropdown-header">School:</h6></li>
+                        <li><span class="dropdown-item-text">Dropdown item text</span></li>
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h6 class="dropdown-header">Personal:</h6></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+                    </svg></a>
                 </li>
             </ul>
 
             <span class="navbar-text float-start float-md-none">Hello, Jaden Zaleski</span>
-            <button type="button" class="btn login-button pt-1 ms-md-2 mb-2 mb-md-0 float-end">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                     class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd"
-                          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                </svg>
-            </button>
+            <div class="dropdown">
+                <button type="button" class="btn login-button pt-1 ms-md-2 mb-2 mb-md-0 float-end dropdown-toggle caret-off border-0"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                         class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd"
+                              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end p-4">
+                    <form class="login-form">
+                        <div class="mb-3">
+                            <label for="loginFormUsername" class="form-label">Username:</label>
+                            <input type="text" class="form-control" id="loginFormUsername" placeholder="user" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginFormPassword" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="loginFormPassword" placeholder="password" required>
+                        </div>
+                        <button type="submit" class="btn w-100">Sign in</button>
+                    </form>
+                    <div class="dropdown-divider mt-3"></div>
+                    <p class="dropdown-header"><a href="#">Sign up</a> | <a href="#">Forgot password?</a></p>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
@@ -77,6 +95,16 @@
                 <p class="lead text-muted">Something short and leading about the collection below—its contents, the
                     creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
                     entirely.</p>
+                <p class="lead text-muted">Something short and leading about the collection below—its contents, the
+                    creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
+                    entirely.</p>
+                <p class="lead text-muted">Something short and leading about the collection below—its contents, the
+                    creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
+                    entirely.</p>
+                <p class="lead text-muted">Something short and leading about the collection below—its contents, the
+                    creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
+                    entirely.</p>
+
                 <p>
                     <a href="#" class="btn btn-primary my-2">Main call to action</a>
                     <a href="#" class="btn btn-secondary my-2">Secondary action</a>
@@ -89,7 +117,7 @@
 <footer class="container">
     <div class="row py-4">
         <div class="col-12 text-center">
-            <p>Made by Jaden Zaleski, 2022</p>
+            <p>Made by Jaden Zaleski, 2022.</p>
         </div>
         <div class="col-12 text-center">
             <a type="button" class="btn rounded-circle social-button-link me-2"

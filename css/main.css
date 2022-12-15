@@ -26,8 +26,30 @@ body {
     color: var(--jaden-gray);
 }
 
-.login-button:active {
-    border: none;
+.dropdown-menu {
+    background-color: var(--jaden-white);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 15px 45px;
+    color: var(--jaden-black);
+}
+
+.login-form button {
+    border: 1px solid var(--jaden-blue);
+    color: var(--jaden-black);
+}
+
+.login-form button:hover {
+    background-color: var(--jaden-blue);
+}
+
+.dropdown-header a {
+    color: var(--jaden-blue);
+}
+
+.caret-off::before {
+    display: none;
+}
+.caret-off::after {
+    display: none;
 }
 
 main {
@@ -42,6 +64,7 @@ footer {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     box-shadow: rgba(0, 0, 0, 1) 0 30px 90px;
+    color: var(--jaden-black);
 }
 
 .social-button-link {
