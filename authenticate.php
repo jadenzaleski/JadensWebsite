@@ -2,7 +2,6 @@
 
 session_start();
 
-echo "ehh";
 // Change this to your connection info.
 $DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'root';
@@ -29,7 +28,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
     $stmt->store_result();
 
 
-    $stmt->close();
+//    $stmt->close();
 }
 
 if ($stmt->num_rows > 0) {
