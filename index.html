@@ -36,8 +36,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        Projects</a>
+                       aria-expanded="false">Projects</a>
                     <ul class="dropdown-menu">
                         <li><h6 class="dropdown-header">School:</h6></li>
                         <li><span class="dropdown-item-text">Dropdown item text</span></li>
@@ -67,14 +66,14 @@
                     </svg>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end p-4">
-                    <form class="login-form">
+                    <form class="login-form" action="authenticate.php" method="post">
                         <div class="mb-3">
                             <label for="loginFormUsername" class="form-label">Username:</label>
-                            <input type="text" class="form-control" id="loginFormUsername" placeholder="user" required>
+                            <input type="text" name="username" class="form-control" id="loginFormUsername" placeholder="user" required>
                         </div>
                         <div class="mb-3">
                             <label for="loginFormPassword" class="form-label">Password:</label>
-                            <input type="password" class="form-control" id="loginFormPassword" placeholder="password" required>
+                            <input type="password" name="password" class="form-control" id="loginFormPassword" placeholder="password" required>
                         </div>
                         <button type="submit" class="btn w-100">Sign in</button>
                     </form>
