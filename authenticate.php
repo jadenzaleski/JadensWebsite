@@ -1,6 +1,8 @@
 <?php
 
 session_start();
+
+echo "ehh";
 // Change this to your connection info.
 $DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'root';
