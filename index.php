@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 ?>
 
 <!doctype html>
@@ -82,9 +83,15 @@ session_start();
                 </li>
             </ul>
 
-            <span class="navbar-text float-start float-md-none mb-1">Login/Sign Up <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right m-0" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-</svg></span>
+            <span class="navbar-text float-start float-md-none mb-1">
+                <?php
+                if (!$_SESSION['loggedin']) { ?>
+                    Login / Sign Up <svg xmlns = "http://www.w3.org/2000/svg" width = "16" height = "16" fill = "currentColor" class="bi bi-chevron-right m-0" viewBox = "0 0 16 16" >
+                    <path fill - rule = "evenodd" d = "M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" /></svg >
+                <?php } else { ?>
+                    Hello, <?php $_SESSION['firstname'] ?>
+                <?php } ?>
+            </span>
             <div class="dropdown">
                 <button type="button"
                         class="btn login-button pt-1 ms-md-0 mb-2 mb-md-0 float-end dropdown-toggle caret-off border-0"
