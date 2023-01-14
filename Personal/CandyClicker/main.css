@@ -10,7 +10,7 @@
 #bagPercent {
     float: left;
     margin-top: 1px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 #upgradeBagButton {
@@ -29,7 +29,7 @@
     height: 500px;
     width: 850px;
     padding: 5px;
-    padding-top: 0px;
+    padding-top: 0;
     margin: auto;
     border: 1px dashed black;
 }
@@ -109,7 +109,7 @@ li a:hover{cursor: pointer;}
     overflow: hidden;
     overflow-y: scroll;
     height: 308px;
-    padding: 0px;
+    padding: 0;
 
 
 }
