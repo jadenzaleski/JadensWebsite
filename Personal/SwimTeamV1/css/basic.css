@@ -1,8 +1,6 @@
 body{
-    background: url(../images/waves.jpg);
+    background: url(../images/waves.jpg) no-repeat fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 table {
@@ -109,8 +107,9 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     }
 
-    .footercontainer{
-   width: 100%;
+    .footercontainer {
+        width: 100%;
+    }
 }
 
 

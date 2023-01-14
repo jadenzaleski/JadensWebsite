@@ -50,6 +50,7 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+/*noinspection CssInvalidPropertyValue*/
 @-ms-viewport {
   width: device-width;
 }
@@ -2123,6 +2124,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   margin-bottom: 0;
 }
 
+/*noinspection ALL*/
 .form-check-inline {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -3185,6 +3187,7 @@ tbody.collapse.show {
   white-space: nowrap;
 }
 
+/*noinspection CssInvalidPropertyValue*/
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -3477,6 +3480,7 @@ tbody.collapse.show {
   padding-left: 1.5rem;
 }
 
+/*noinspection CssInvalidPropertyValue*/
 .custom-control-inline {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
