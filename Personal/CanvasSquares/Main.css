@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+    height: 100%;
+}
+
+canvas {
+    object-fit: contain;
+    margin:50px auto;
+    border: 1px dashed;
+    display: block
+}

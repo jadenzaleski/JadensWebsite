@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>CandyClicker</title>
+
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">    
+    
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js" defer></script> <!--type="text/javascript"--> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<nav>
+    
+</nav>
+<body id="mainBox" onload="start();">
+    <div id="candiesBox">
+        <p class="margin3" id="ground">there is 1 candy on the ground</p>
+        <button class="margin3" id="grabCandy" onclick="collectCandy();">grab candies</button>
+        <p class="margin3" id="collected"></p>
+        <p class="margin3" id="bagPercent"> your <span id="defBag">hand</span> is <span id="percentage"></span>full.</p>
+        <button id="upgradeBagButton" onclick="upgradeBag();">upgrade</button>
+    </div>
+    <div id="walkingBox">
+        <p id="displayFind">&nbsp;</p>
+        <pre id="manSetting" class="margin3"></pre>
+
+    </div>
+    <div id="remyBox">
+        <button id="eatCandyBtn" onclick="eatCandy();">eat candies</button>
+        <p class="margin3" id="eatenCandies">you have eaten 0 candies</p>
+        <pre class="margin3" id="remyProg"></pre>
+    </div>
+    <div id="findsBox">
+        <h1 class="margin3 findsH">finds</h1>
+        <div id="findList">
+            <ul id="findListNavUl">
+                <li id="findListNavLi"><a id="findListNavA" onclick="showCommon();">common</a></li>
+                <li id="findListNavLi"><a id="findListNavA" onclick="showRare();">rare</a></li>
+                <li id="findListNavLi"><a id="findListNavA" onclick="showMythical();">mythical</a></li>
+            </ul>
+            
+            <div id="commonList" class="findsList">
+                <h1 class="margin3 findsH">-common-</h1>
+                <h1 class="margin3 findsH" id="commonProgress">0/90</h1>
+                <ul class= "findsListUl" id="commonListUl"></ul>
+            </div>
+            <div id="rareList" class="findsList">
+                <h1 class="margin3 findsH">-rare-</h1>
+                <h1 class="margin3 findsH" id="rareProgress">0/40</h1>
+                <ul class= "findsListUl" id="rareListUl"></ul>
+            </div>
+            <div id="mythicalList" class="findsList">
+                <h1 class="margin3 findsH">-mythical-</h1>
+                <h1 class="margin3 findsH" id="mythicalProgress">0/20</h1>
+                <ul class= "findsListUl" id="mythicalListUl"></ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

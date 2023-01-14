@@ -1,0 +1,56 @@
+
+    <img src="http://meadowmoorswim.com/images/teamlogo2.gif" width="55" height="40" alt="logo" class="mr-3">
+    <!-- mobile hamburger -->
+
+---MAIN COLORS---
+
+#645f5f   rgb(100, 95, 95)
+
+#dcdcdc   rgb(220, 220, 220)
+
+#2cc8d5
+
+---MAIN COLORS---
+---WEBSITE---
+
+<Home>, <Schedules>, <about us>,  <registration>, <team info, <speacial events>
+
+<Home>
+    slideshow, ----
+    team bio, -----
+    volenteer/sign up genius,  1 ----
+    FAQ,  2 ----
+    latest swimmer of the week,  3 ----
+    swimstrong info,  4 ----
+    sumbit pics for the new slide show,  
+<Home/>
+
+<Schedules>
+    Practice schedules,
+    meet schedules,
+    ice cream places,
+<Schedules/>
+
+<About us>
+    swimming,
+    coaches bio,
+<About us/>
+
+<registration>
+    meadow wood site
+<registration/>
+
+<team info>
+    team info, ----
+    team apperial, swim outlet, ----
+    team suits,  ---- 
+    past team slideshows,      
+    all swimmer of the weeks,
+<team info/>
+
+<speacial events>
+    pool parties,
+    team bankquet,
+    picture day,
+    wensday hangouts,
+<speacial events/>

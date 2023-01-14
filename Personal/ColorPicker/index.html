@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="http://www.clker.com/cliparts/9/g/e/W/U/9/cool-wheel.svg.thumb.png" type="image/x-icon">
+    
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <title>Free Color Picker</title>
+  </head>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between">
+    <a class="navbar-brand" href="#" style="">
+      <img src="images/home.png" width="30" height="28" alt="logo" class="invert mr-3">
+      Custom Web Design
+    </a>
+    <img src="http://www.clker.com/cliparts/9/g/e/W/U/9/cool-wheel.svg.thumb.png" width="30" height="30" alt="wheel" class="float-left">
+  </nav>
+  <body>
+  <h1 class="cp text-center w-100 mt-3 bounceInLeft animated">Color Picker</h1>
+    
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-sm fadeInUp animated">
+          <h5 class="text-light font text-center">Change Background</h5>
+          <button type="button" id="bgBtn" class="jscolor{valueElement:'valueInput', styleElement:'styleInput'} font btn-primary btn btn-lg btn-block">Edit</button>
+        </div>
+        <div class="col-sm">
+          
+          <div id="styleInput" class="container demo" >
+            <p id="styleInput2" class="font text-center">Sample Text</p>
+          </div>
+
+        </div>
+        <div class="col-sm fadeInUp animated">
+          <h5 class="text-light font text-center ">Change Font Color</h5>
+          <button type="button" class="jscolor{valueElement:'valueInput2', styleElement:'styleInput2'} font btn-primary btn btn-lg btn-block" >Edit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/jscolor.min.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $(document).mousemove(function (event) {
+        let bg = $('#styleInput').css('background-color');
+        let textBg = $('#styleInput2').css('background-color');
+        function convert(rgb) {
+          if (/^#[0-9A-F]{6}$/i.test(rgb)) return rgb;
+
+          rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+
+          function hexCode(i) {
+            return ("0" + parseInt(i).toString(16)).slice(-2);
+          }
+          return "#" + hexCode(rgb[1]) + hexCode(rgb[2])
+                  + hexCode(rgb[3]);
+        }
+        $('#styleInput2').text("Bg: " + convert(bg) + "\nTxt: " + convert(textBg));
+      });
+    });
+  </script>
+</html>

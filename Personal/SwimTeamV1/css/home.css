@@ -1,0 +1,126 @@
+
+.button{
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    color: #645f5f;
+    background-color: #2cc8d5;
+    text-decoration: none;
+    padding: 20px;
+    width: 250px;
+    height: 125px;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.maincontainer>img{
+    background: white;
+    border-radius: 12px;
+    margin-top: 0px;
+    margin-left: 7px;
+    
+}
+
+.buttonsleft{
+    margin-left: auto;
+    height: 260px;
+    width: 250px;
+    float: left;
+}
+
+.margin5{
+    margin-bottom: 5px;
+}
+
+.buttonsright{
+    margin-right: auto;
+    height: 260px;
+    width: 250px;
+    float: right;  
+}
+
+.button:hover{
+    background-color: #645f5f;
+    color: white;
+}
+
+
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+h1{
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 950px){
+
+.maincontainer{
+    width: 750px;
+}
+
+.footercontainer{
+   width: 750px;
+}
+
+.button{
+    width: 100%;
+    height: 100px;
+}
+
+.buttonsright{
+    height: 200px;
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+}
+
+.buttonsleft{
+    height: 200px;
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+}
+
+.maincontainer>img{
+    margin-left: 160px;
+}
+
+@media screen and (max-width: 750px){
+    
+.maincontainer{
+    width: 575px;
+}
+
+.footercontainer{
+   width: 575px;
+}
+
+.maincontainer>img{
+    margin-left: 65px;
+}
+    
+}
+
+@media screen and (max-width: 575px){
+
+.maincontainer{
+    margin-top: 300px;
+    width: 100%;
+}
+
+.footercontainer{
+   width: 100%;
+}
+
+.maincontainer>img{
+    margin-left: 0px;
+    width: 100%;
+}
+ 
+}
+    

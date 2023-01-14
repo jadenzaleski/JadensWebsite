@@ -1,0 +1,53 @@
+
+
+button:focus {outline:0;} /*  NO OUTLINED BUTTONS */
+
+body {
+   background: -webkit-linear-gradient(to bottom, #2b2b2b, #000000);
+   background: -o-linear-gradient(to bottom, #2b2b2b, #000000);
+   background: -moz-linear-gradient(to bottom, #2b2b2b, #000000);
+   background: linear-gradient(to bottom, #2b2b2b, #000000);
+   background-attachment: fixed;
+
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.demo-btn {
+    border-radius: 3px;
+}
+
+.demo {
+    border-radius: 1rem;
+    border: 3px solid #fff;
+    font-size: 2rem;
+    padding: 5rem;
+}
+
+.cp {
+  font-family: 'Fredoka One', cursive;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.font {
+      font-family: 'Fredoka One', cursive;
+}
+
+.no-overflow {
+    overflow: hidden;
+}
+
+#styleInput2 {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#styleInput {
+    padding-left: 0;
+    padding-right: 0;
+}

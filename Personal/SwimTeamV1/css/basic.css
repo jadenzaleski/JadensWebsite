@@ -1,0 +1,116 @@
+body{
+    background: url(../images/waves.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: auto;
+        size: auto;
+    }
+    
+   table,td, th {
+        border: 1px solid #645f5f;
+        text-align: center;
+        padding: 6px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #645f5f;
+        color: white;
+}
+
+.clearfix:before,
+ .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+hr{
+    height: 5px;
+    background-color: #645f5f;
+
+}
+
+p{
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
+
+
+.footercontainer {
+    padding: 25px;
+    margin: auto;
+    margin-top: 15px;
+    background: #dcdcdc;  
+    width: 950px;
+    height: auto;
+    border: solid #645f5f 3px;
+    box-shadow: 0px 2px 14px #645f5f;
+    size: 5px;
+    text-align: center;
+}
+
+.maincontainer {
+    padding: 50px;
+    margin: auto;
+    background: #dcdcdc;  
+    width: 950px;
+    height: auto;
+    border: solid #645f5f 3px;
+    border-top: 0px;
+    box-shadow: 0px 2px 14px #645f5f;
+}
+
+@media screen and (max-width: 950px){
+
+    .maincontainer{
+    width: 750px;
+    }
+
+    .footercontainer{
+   width: 750px;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+    
+    .maincontainer{
+    width: 575px;
+    }
+
+    .footercontainer{
+   width: 575px;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+
+    .maincontainer{
+    margin-top: 300px;
+    width: 100%;
+    }
+
+    .footercontainer{
+   width: 100%;
+}
+
+
