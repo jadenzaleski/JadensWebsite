@@ -1,4 +1,4 @@
 <?php
-system("pm start index.js");
+shell_exec("bash startnode.sh");
 header('jadenzaleski.ddns.net/node');
 ?>
