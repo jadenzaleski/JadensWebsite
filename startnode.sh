@@ -1,3 +1,4 @@
 #!/bin/bash
 
-pm2 start node/index.js
+#pm2 start node/index.js
+whoami
