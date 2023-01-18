@@ -1,0 +1,94 @@
+* {
+    font-family: monospace;
+    font-weight: lighter;
+}
+
+.btn-toggle {
+    display: inline-flex;
+    align-items: center;
+    padding: .25rem .5rem;
+    background-color: transparent;
+    border: 0;
+}
+.btn-toggle:hover,
+.btn-toggle:focus {
+    font-weight: bold;
+}
+
+.btn-toggle::before {
+    width: 1.25em;
+    margin-right: 1px;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.75%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='1 ' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform .35s ease;
+    transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+    font-weight: bold;
+}
+.btn-toggle[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+    display: inline-flex;
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 1.25rem;
+    text-decoration: none;
+}
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+    font-weight: bold;
+}
+
+.a-active {
+    text-decoration: underline !important;
+    font-weight: bold;
+}
+
+.gauge-box {
+    width: 100px;
+    height: 100px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px lightgray;
+}
+
+.gauge-fg{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: auto;
+    color: #212529;
+    background-color: #f8f9fa;
+    box-shadow: 0px 0px 5px 1px lightgray inset;
+
+}
+
+.gauge {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(#0d6efd 270deg, rgba(255, 255, 255, 0) 270deg);
+    border-radius: 50%;
+    padding-top: 5px;
+}
+
+.form-check-input:checked {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.form-check-input:hover {
+    cursor: pointer;
+}
+
+.form-check-input {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
+
+}
+
+/*0 190 0*/

@@ -51,17 +51,17 @@ session_start();
                             <hr class="dropdown-divider">
                         </li>
                         <li><h6 class="dropdown-header">Personal:</h6></li>
-                        <li><a class="dropdown-item" href="/Personal/CanvasSquares" target="_blank">Canvas Squares <span
+                        <li><a class="dropdown-item" href="/personal/CanvasSquares" target="_blank">Canvas Squares <span
                                         class="text-muted">(Apr 2022)</span></a></li>
-                        <li><a class="dropdown-item" href="/Personal/CandyClicker" target="_blank">Candy Clicker <span
+                        <li><a class="dropdown-item" href="/personal/CandyClicker" target="_blank">Candy Clicker <span
                                         class="text-muted">(May 2020)</span></a></li>
-                        <li><a class="dropdown-item" href="/Personal/ZaleskiPage" target="_blank">Zaleski Page <span
+                        <li><a class="dropdown-item" href="/personal/ZaleskiPage" target="_blank">Zaleski Page <span
                                         class="text-muted">(Oct 2019)</span></a></li>
-                        <li><a class="dropdown-item" href="/Personal/ColorPicker" target="_blank">Color Picker <span
+                        <li><a class="dropdown-item" href="/personal/ColorPicker" target="_blank">Color Picker <span
                                         class="text-muted">(Mar 2018)</span></a></li>
-                        <li><a class="dropdown-item" href="/Personal/SwimTeamV2" target="_blank">Swim Team V2 <span
+                        <li><a class="dropdown-item" href="/personal/SwimTeamV2" target="_blank">Swim Team V2 <span
                                         class="text-muted">(Feb 2018)</span></a></li>
-                        <li><a class="dropdown-item" href="/Personal/SwimTeamV1" target="_blank">Swim Team V1 <span
+                        <li><a class="dropdown-item" href="/personal/SwimTeamV1" target="_blank">Swim Team V1 <span
                                         class="text-muted">(Jun 2017)</span></a></li>
                     </ul>
                 </li>
