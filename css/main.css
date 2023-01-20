@@ -22,6 +22,24 @@ body {
     color: var(--jaden-black);
 }
 
+.nav-item:hover a {
+    color: var(--jaden-gray);
+}
+
+.nav-link:focus {
+    outline: 0;
+}
+
+.dropdown-item {
+    color: var(--jaden-black) !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--jaden-white);
+    color: var(--jaden-gray) !important;
+
+}
+
 .login-button:hover svg {
     color: var(--jaden-gray);
 }
