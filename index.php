@@ -95,7 +95,7 @@ session_start();
             <div class="dropdown">
                 <button type="button"
                         class="btn login-button pt-1 ms-md-0 mb-2 mb-md-0 float-end dropdown-toggle caret-off border-0"
-                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                          class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -108,7 +108,7 @@ session_start();
                         <div class="mb-3">
                             <label for="loginFormUsername" class="form-label">Username:</label>
                             <input type="text" name="username" class="form-control" id="loginFormUsername"
-                                   placeholder="user" required>
+                                   placeholder="username" required>
                         </div>
                         <div class="mb-3">
                             <label for="loginFormPassword" class="form-label">Password:</label>
@@ -118,15 +118,49 @@ session_start();
                         <button type="submit" class="btn w-100">Sign in</button>
                     </form>
                     <div class="dropdown-divider mt-3"></div>
-                    <p class="dropdown-header"><a href="#">Sign up</a> | <a href="mailto:jadenzaleski@icloud.com?subject=Forgot%20Password&body=Hello%2C%0D%0AI%20have%20forgotten%20my%20password.">Forgot password?</a></p>
+                    <p class="dropdown-header"><button class="p-0 m-0 text-decoration-underline border-0 bg-transparent" type="button" data-bs-toggle="modal" data-bs-target="#SignUpModal">Sign up</button> | <a href="mailto:jadenzaleski@icloud.com?subject=Forgot%20Password&body=Hello%2C%0D%0AI%20have%20forgotten%20my%20password.">Forgot password?</a></p>
                 </div>
             </div>
         </div>
     </div>
 </nav>
 
+<!-- Sign Up Modal -->
+<div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Sign Up</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-3">
+                <p>Create an account to have access to more features.</p>
+                <form class="row g-3 signup-form" method="post" action="signup.php">
+                    <div class="col-6">
+                        <input type="text" name="firstname" class="form-control" placeholder="First name"  aria-label="First name" required>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" name="lastname" class="form-control" placeholder="Last name" aria-label="Last name" required>
+                    </div>
+                    <div class="col-12">
+                        <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Email" required>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" name="user" class="form-control" placeholder="Username" aria-label="Username" required>
+                    </div>
+                    <div class="col-6">
+                        <input type="password" name="password" class="form-control" placeholder="Password" aria-label="Password" required>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn w-100">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
-<main class="container mb-5">
+<main class="container">
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
@@ -152,6 +186,7 @@ session_start();
         </div>
     </section>
 </main>
+<div class="spacer mb-5"></div>
 
 <footer class="container">
     <div class="row py-4">

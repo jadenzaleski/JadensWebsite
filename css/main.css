@@ -8,6 +8,14 @@ html {
 
 body {
     background-color: var(--jaden-black);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.spacer {
+    flex-grow: 1;
 }
 
 .navbar-main {
@@ -28,6 +36,10 @@ body {
 
 .nav-link:focus {
     outline: 0;
+}
+
+.dropdown-header button {
+    color: var(--jaden-blue);
 }
 
 .dropdown-item {
@@ -68,6 +80,15 @@ body {
 }
 .caret-off::after {
     display: none;
+}
+
+.signup-form button {
+    border: 1px solid var(--jaden-blue);
+    color: var(--jaden-black);
+}
+
+.signup-form button:hover {
+    background-color: var(--jaden-blue);
 }
 
 main {
