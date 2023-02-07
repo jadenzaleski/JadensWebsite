@@ -87,7 +87,7 @@ session_start();
             <span class="navbar-text float-start float-md-none mb-1">
                 <?php
                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']) { ?>
-                    Hello, <?php echo $_SESSION['name'] ?>
+                    Hello, <?php echo $_SESSION['firstname'] ?>
                 <?php } else { ?>
                     Login / Sign Up <svg xmlns = "http://www.w3.org/2000/svg" width = "16" height = "16" fill = "currentColor" class="bi bi-chevron-right m-0" viewBox = "0 0 16 16" ><path fill-rule = "evenodd" d = "M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" /></svg >
                 <?php } ?>
@@ -115,7 +115,7 @@ session_start();
                             <input type="password" name="password" class="form-control" id="loginFormPassword"
                                    placeholder="password" required>
                         </div>
-                        <button type="submit" class="btn w-100">Sign in</button>
+                        <button type="button" onclick="SignIn();" class="btn w-100">Sign in</button>
                     </form>
                     <div class="dropdown-divider mt-3"></div>
                     <p class="dropdown-header"><button class="p-0 m-0 text-decoration-underline border-0 bg-transparent" type="button" data-bs-toggle="modal" data-bs-target="#SignUpModal">Sign up</button> | <a href="mailto:jadenzaleski@icloud.com?subject=Forgot%20Password&body=Hello%2C%0D%0AI%20have%20forgotten%20my%20password.">Forgot password?</a></p>
