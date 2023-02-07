@@ -146,10 +146,10 @@ session_start();
                         <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Email" required>
                     </div>
                     <div class="col-6">
-                        <input type="text" name="username" class="form-control" placeholder="Username" aria-label="Username" required>
+                        <input type="text" name="username" class="form-control" placeholder="Username" aria-label="Username" pattern=".{8,}" required>
                     </div>
                     <div class="col-6">
-                        <input type="password" name="password" class="form-control" placeholder="Password" aria-label="Password" required>
+                        <input type="password" name="password" class="form-control" placeholder="Password" aria-label="Password" pattern=".{8,}" required>
                     </div>
                     <div class="col-12">
                         <button type="submit" class="btn w-100">Submit</button>
