@@ -1,7 +1,6 @@
 <?php
 session_start();
-function connect()
-{
+function connect() {
     session_start();
     $DATABASE_HOST = 'localhost';
     $DATABASE_USER = 'root';
@@ -15,5 +14,3 @@ function connect()
     }
     return $con;
 }
-
-$con = connect();

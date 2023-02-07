@@ -1,4 +1,6 @@
 <?php
+require 'dbConnect.php';
+
 $con = connect();
 
 if ( !isset($_POST['username'], $_POST['password']) ) {

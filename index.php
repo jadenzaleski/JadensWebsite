@@ -179,7 +179,7 @@ session_start();
                     entirely.</p>
 
                 <p>
-                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                    <button type="button" class="btn btn-primary my-2">Main call to action</button>
                     <a href="#" class="btn btn-secondary my-2">Secondary action</a>
                 </p>
             </div>

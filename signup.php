@@ -1,5 +1,7 @@
 <?php
 
+require 'dbConnect.php';
+
 $con = connect();
 
 $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
