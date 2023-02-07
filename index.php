@@ -68,7 +68,7 @@ session_start();
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="info.php" target="_blank">Info</a>
+                    <a class="nav-link" aria-current="page" href="#" target="_blank">Info</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="https://ceclnx01.cec.miamioh.edu/~zaleskjr/"
@@ -146,7 +146,7 @@ session_start();
                         <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Email" required>
                     </div>
                     <div class="col-6">
-                        <input type="text" name="user" class="form-control" placeholder="Username" aria-label="Username" required>
+                        <input type="text" name="username" class="form-control" placeholder="Username" aria-label="Username" required>
                     </div>
                     <div class="col-6">
                         <input type="password" name="password" class="form-control" placeholder="Password" aria-label="Password" required>
