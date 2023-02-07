@@ -134,7 +134,7 @@ session_start();
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-3">
-                <p>Create an account to have access to more features.</p>
+                <p>Create an account to have access to more features. Username and password must be at least 8 characters long.</p>
                 <form class="row g-3 signup-form" method="post" action="signup.php">
                     <div class="col-6">
                         <input type="text" name="firstname" class="form-control" placeholder="First name"  aria-label="First name" required>
