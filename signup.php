@@ -11,7 +11,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $check->bind_param("s", $_POST['username']);
     $check->execute();
     $result = $check->get_result();
-    echo $result;
+
+    while ($row = $result->fetch_assoc()) {
+        echo $row;
+    }
 
     // create account
     $stmt = $con->prepare("INSERT INTO jaden_users.accounts (username, password, email, firstname, lastname, since) VALUES (?, ?, ?, ?, ?, DEFAULT)");
