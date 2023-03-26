@@ -39,11 +39,15 @@ session_start();
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                    <a class="nav-link active fw-bolder" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active fw-bolder" aria-current="page" href="https://jadenzaleski.ddns.net"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house me-1 mb-1" viewBox="0 0 16 16">
+                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                        </svg>Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">Projects</a>
+                       aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-braces me-1 mb-1" viewBox="0 0 16 16">
+                            <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
+                        </svg>Projects</a>
                     <ul class="dropdown-menu">
                         <li><h6 class="dropdown-header">School:</h6></li>
                         <li><span class="dropdown-item-text">Dropdown item text</span></li>
@@ -68,18 +72,21 @@ session_start();
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#" target="_blank">Info</a>
+                    <a class="nav-link" aria-current="page" href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle me-1 mb-1" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                        </svg>Info</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="https://ceclnx01.cec.miamioh.edu/~zaleskjr/"
-                       target="_blank">Miami Server</a>
+                       target="_blank"><img src="images/miami.png" height="16px" class="m-1 mb-2 ms-0" id="miami-logo" alt="miami logo">Miami Server</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="node">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-speedometer2" style="margin-bottom: 2px;" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-speedometer2 me-1 mb-1" style="margin-bottom: 2px;" viewBox="0 0 16 16">
                             <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
                             <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
-                        </svg>
+                        </svg>Node.js
                     </a>
                 </li>
             </ul>
@@ -164,23 +171,8 @@ session_start();
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Album example</h1>
-                <p class="lead text-muted">Something short and leading about the collection below—its contents, the
-                    creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
-                    entirely.</p>
-                <p class="lead text-muted">Something short and leading about the collection below—its contents, the
-                    creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
-                    entirely.</p>
-                <p class="lead text-muted">Something short and leading about the collection below—its contents, the
-                    creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
-                    entirely.</p>
-                <p class="lead text-muted">Something short and leading about the collection below—its contents, the
-                    creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
-                    entirely.</p>
-
-                <p>
-                    <button type="button" class="btn btn-primary my-2">Main call to action</button>
-                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                <h1 class="fw-light">Hello!</h1>
+                <p class="lead text-muted">have responsive picture and general explanation with details on what the site is. include linkedin/gihub and also refer to info tab. talk about general site navigation and login.
                 </p>
             </div>
         </div>
@@ -191,7 +183,7 @@ session_start();
 <footer class="container">
     <div class="row py-4">
         <div class="col-12 text-center">
-            <p>Made by Jaden Zaleski, 2022.</p>
+            <p>Made by Jaden Zaleski, 2022/2023.</p>
         </div>
         <div class="col-12 text-center">
             <a type="button" class="btn rounded-circle social-button-link me-2"

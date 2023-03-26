@@ -34,6 +34,10 @@ body {
     color: var(--jaden-gray);
 }
 
+.nav-item:hover img {
+    /* this is --jaden-gray */
+    filter: invert(28%) sepia(8%) saturate(770%) hue-rotate(193deg) brightness(96%) contrast(87%);
+}
 .nav-link:focus {
     outline: 0;
 }
@@ -49,7 +53,6 @@ body {
 .dropdown-item:hover {
     background-color: var(--jaden-white);
     color: var(--jaden-gray) !important;
-
 }
 
 .login-button:hover svg {
