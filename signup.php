@@ -12,7 +12,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $check->execute();
     $result = $check->get_result();
 
-    echo $result->fetch_assoc();
+    $row = $result->fetch_assoc();
+    echo $row[0];
 
     // create account
     $stmt = $con->prepare("INSERT INTO jaden_users.accounts (username, password, email, firstname, lastname, since) VALUES (?, ?, ?, ?, ?, DEFAULT)");
