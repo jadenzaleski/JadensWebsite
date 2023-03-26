@@ -7,7 +7,8 @@ A basic portfolio and small demonstration of what I spend my free time on. Feel 
 ---
 
 ### TODOS:
-- [ ] check for duplicate account creations
+- [x] check for duplicate account creations
+- [ ] add verification for forms.
 - [ ] populate website with text
 - [ ] create info tab
 - [ ] finish dropdown
