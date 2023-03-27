@@ -6,7 +6,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-    // check for duplicate account TODO finish check duplicate account creations by showing status
+    // check for duplicate account
     $check = $con->prepare("select count(*) from accounts where username = ?");
     $check->bind_param("s", $_POST['username']);
     $check->execute();
