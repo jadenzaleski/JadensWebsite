@@ -21,6 +21,7 @@ function SignIn() {
 }
 
 function SignUp() {
+    $("#alreadyTaken").addClass("visually-hidden");
     $("#signUpSpinner").removeClass("visually-hidden");
     a = $.ajax({
         url: 'signup.php',
@@ -41,8 +42,9 @@ function SignUp() {
             $("#signUpSuccess").removeClass("visually-hidden");
             setTimeout(function () {
                 location.reload();
-            }, 500)
-            $("#signUpSuccess").addClass("visually-hidden");
+                $("#signUpSuccess").addClass("visually-hidden");
+            }, 1000)
+
 
         }
     }).fail(function (error) {
