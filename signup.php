@@ -4,7 +4,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $con = connect();
 
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    // hash password
+    // https://stackoverflow.com/questions/47602044/how-do-i-use-the-argon2-algorithm-with-password-hash
+    $password = password_hash($_POST['password'], PASSWORD_ARGON2I);
 
     // check for duplicate account
     $check = $con->prepare("select count(*) from accounts where username = ?");
