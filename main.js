@@ -32,7 +32,9 @@ function SignUp() {
             password: $("#signUpPassword").val()
         }
     }).done(function (data) {
-        console.log(data);
+        if (data === "failed") {
+            $("#alreadyTaken").removeClass("visually-hidden");
+        }
     }).fail(function (error) {
         console.log("error", error.statusText);
     });
