@@ -168,23 +168,39 @@ session_start();
                 <form class="row g-3 signup-form" method="post" action="signup.php">
                     <div class="col-6">
                         <input type="text" id="signUpFirstName" name="firstname" class="form-control"
-                               placeholder="First name" aria-label="First name" required>
+                               placeholder="First name" aria-label="First name">
+                        <div class="invalid-feedback">
+                            First name must be between 1 and 255 characters.
+                        </div>
                     </div>
                     <div class="col-6">
                         <input type="text" id="signUpLastName" name="lastname" class="form-control"
-                               placeholder="Last name" aria-label="Last name" required>
+                               placeholder="Last name" aria-label="Last name">
+                        <div class="invalid-feedback">
+                            Last name must be between 1 and 255 characters.
+                        </div>
                     </div>
                     <div class="col-12">
                         <input type="email" id="signUpEmail" name="email" class="form-control" placeholder="Email"
-                               aria-label="Email" required>
+                               aria-label="Email">
+                        <div class="invalid-feedback">
+                            Email must be valid and between 1 and 255 characters.
+                        </div>
                     </div>
                     <div class="col-6">
                         <input type="text" id="signUpUsername" name="username" class="form-control"
-                               placeholder="Username" aria-label="Username" required pattern=".{8,}">
+                               placeholder="Username" aria-label="Username">
+                        <div class="invalid-feedback">
+                            Username must be between 1 and 255 characters.
+                        </div>
+
                     </div>
                     <div class="col-6">
                         <input type="password" id="signUpPassword" name="password" class="form-control"
-                               placeholder="Password" aria-label="Password" required pattern=".{8,}">
+                               placeholder="Password" aria-label="Password">
+                        <div class="invalid-feedback">
+                            Password must be between 8 and 255 characters.
+                        </div>
                     </div>
                     <div class="col-12">
                         <button type="button" onclick="SignUp();" class="btn w-100">Submit</button>
