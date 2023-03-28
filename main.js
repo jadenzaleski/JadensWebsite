@@ -47,8 +47,6 @@ function SignIn() { // TODO finish sign in verification
             } else {
                 $("#signInSuccess").removeClass("visually-hidden");
                 setTimeout(function () {
-                    $("#signInSuccess").addClass("visually-hidden");
-                    $("#signInDropdown").removeClass("show")
                     location.reload();
                 }, 1000)
 
@@ -138,7 +136,6 @@ function SignUp() {
                 $("#signUpSuccess").removeClass("visually-hidden");
                 setTimeout(function () {
                     location.reload();
-                    $("#signUpSuccess").addClass("visually-hidden");
                 }, 1000)
 
 
