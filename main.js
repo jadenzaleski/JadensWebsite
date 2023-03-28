@@ -29,6 +29,10 @@ function SignIn() { // TODO finish sign in verification
     }
 
     if (passed) {
+        $("#signInSpinner").removeClass("visually-hidden");
+        $("#signInSuccess").addClass("visually-hidden");
+        $("#incorrectSignIn").addClass("visually-hidden");
+
         a = $.ajax({
             url: 'authenticate.php',
             method: "POST",
@@ -37,12 +41,20 @@ function SignIn() { // TODO finish sign in verification
                 password: password.val()
             }
         }).done(function (data) {
+            $("#signInSpinner").addClass("visually-hidden");
             if (data === "failed") {
+                $("#incorrectSignIn").removeClass("visually-hidden");
+            } else {
+                $("#signInSuccess").removeClass("visually-hidden");
+                setTimeout(function () {
+                    $("#signInSuccess").addClass("visually-hidden");
+                }, 1000)
 
             }
             console.log(data);
         }).fail(function (error) {
             console.log("error", error.statusText);
+            $("#incorrectSignIn").removeClass("visually-hidden");
         });
     }
     console.log("SignIn fired")
