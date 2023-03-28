@@ -29,7 +29,6 @@ function SignUp() {
     let passed = true;
 
     $("#alreadyTaken").addClass("visually-hidden");
-    $("#signUpSpinner").removeClass("visually-hidden");
 
     if (fname.val().length > 0 && fname.val().length < 255) {
         fname.removeClass("is-invalid");
@@ -77,6 +76,7 @@ function SignUp() {
     }
 
     if (passed) {
+        $("#signUpSpinner").removeClass("visually-hidden");
         a = $.ajax({
             url: 'signup.php',
             method: "POST",
