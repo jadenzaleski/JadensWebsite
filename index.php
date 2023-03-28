@@ -131,12 +131,18 @@ session_start();
                         <div class="mb-3">
                             <label for="loginFormUsername" class="form-label">Username:</label>
                             <input type="text" name="username" class="form-control" id="loginFormUsername"
-                                   placeholder="username" required>
+                                   placeholder="username">
+                            <div class="invalid-feedback">
+                                Username must be between 1 and 255 characters.
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="loginFormPassword" class="form-label">Password:</label>
                             <input type="password" name="password" class="form-control" id="loginFormPassword"
-                                   placeholder="password" required>
+                                   placeholder="password">
+                            <div class="invalid-feedback">
+                                Password must be between 8 and 255 characters.
+                            </div>
                         </div>
                         <button type="button" onclick="SignIn();" class="btn w-100">Sign in</button>
                     </form>

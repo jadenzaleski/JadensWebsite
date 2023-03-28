@@ -18,5 +18,6 @@ A basic portfolio and small demonstration of what I spend my free time on. Feel 
 - [ ] double check each page navbar links correctly and that there is constancy between pages with each header and footer
 - [ ] add resume?
 - [ ] comment all code -_-
-- [ ] better secure passwords
+- [x] secure passwords
+- [ ] download 383 site
 

@@ -4,19 +4,43 @@ $(document).ready(function(){
 
 });
 
-function SignIn() {
-    a = $.ajax({
-        url: 'authenticate.php',
-        method: "POST",
-        data: {
-            username: $("[name='username']").val(),
-            password: $("[name='password']").val()
-        }
-    }).done(function (data) {
-        console.log(data);
-    }).fail(function (error) {
-        console.log("error", error.statusText);
-    });
+function SignIn() { // TODO finish sign in verification
+    const username = $("#loginFormUsername");
+    const password = $("#loginFormPassword");
+    let passed = true;
+
+    if (username.val().length > 0 && username.val().length < 255) {
+        username.removeClass("is-invalid");
+        username.addClass("is-valid");
+    } else {
+        username.addClass("is-invalid");
+        username.removeClass("is-valid");
+        passed = false;
+    }
+
+    if (password.val().length > 7 && password.val().length < 255) {
+        password.removeClass("is-invalid");
+        password.addClass("is-valid");
+    } else {
+        password.addClass("is-invalid");
+        password.removeClass("is-valid");
+        passed = false;
+    }
+
+    if (passed) {
+        a = $.ajax({
+            url: 'authenticate.php',
+            method: "POST",
+            data: {
+                username: username.val(),
+                password: password.val()
+            }
+        }).done(function (data) {
+            console.log(data);
+        }).fail(function (error) {
+            console.log("error", error.statusText);
+        });
+    }
     console.log("SignIn fired")
 }
 
