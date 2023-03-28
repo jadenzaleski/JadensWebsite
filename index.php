@@ -118,7 +118,7 @@ session_start();
             <div class="dropdown">
                 <button type="button"
                         class="btn login-button pt-1 ms-md-0 mb-2 mb-md-0 float-end dropdown-toggle caret-off border-0"
-                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="true">
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                          class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
