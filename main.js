@@ -58,12 +58,12 @@ function SignUp() {
         passed = false;
     }
 
-    if (username.val().length > 0 && username.val().length < 255 && username.val().includes("@")) {
-        username.removeClass("is-invalid");
-        username.addClass("is-valid");
+    if (email.val().length > 0 && email.val().length < 255 && email.val().includes("@")) {
+        email.removeClass("is-invalid");
+        email.addClass("is-valid");
     } else {
-        username.addClass("is-invalid");
-        username.removeClass("is-valid");
+        email.addClass("is-invalid");
+        email.removeClass("is-valid");
         passed = false;
     }
 
