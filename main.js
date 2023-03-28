@@ -4,6 +4,7 @@ $(document).ready(function(){
 
 });
 
+// TODO clear text from boxes
 function SignIn() { // TODO finish sign in verification
     const username = $("#loginFormUsername");
     const password = $("#loginFormPassword");
@@ -36,6 +37,9 @@ function SignIn() { // TODO finish sign in verification
                 password: password.val()
             }
         }).done(function (data) {
+            if (data === "failed") {
+
+            }
             console.log(data);
         }).fail(function (error) {
             console.log("error", error.statusText);

@@ -38,9 +38,9 @@ if ($stmt->num_rows > 0) {
         echo 'Welcome ' . $firstname . '!';
     } else {
         // Incorrect password
-        echo 'Incorrect username and/or password!';
+        echo 'failed';
     }
 } else {
     // Incorrect username
-    echo 'Incorrect username and/or password!';
+    echo 'failed';
 }
