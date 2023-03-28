@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 });
 
-function SignIn() { // TODO finish sign in verification
+function SignIn() {
     const username = $("#loginFormUsername");
     const password = $("#loginFormPassword");
     let passed = true;
