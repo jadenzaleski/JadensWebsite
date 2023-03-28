@@ -21,17 +21,17 @@ function SignIn() {
 }
 
 function SignUp() {
-    const fname = $("#signUpFirstName").val();
-    const lname = $("#signUpLastName").val();
-    const email = $("#signUpEmail").val();
-    const username = $("#signUpUsername").val();
-    const password = $("#signUpPassword").val();
+    const fname = $("#signUpFirstName");
+    const lname = $("#signUpLastName");
+    const email = $("#signUpEmail");
+    const username = $("#signUpUsername");
+    const password = $("#signUpPassword");
     let passed = true;
 
     $("#alreadyTaken").addClass("visually-hidden");
     $("#signUpSpinner").removeClass("visually-hidden");
 
-    if (fname.length > 0 && fname.length < 255) {
+    if (fname.val().length > 0 && fname.val().length < 255) {
         fname.removeClass("is-invalid");
         fname.addClass("is-valid");
     } else {
@@ -40,7 +40,7 @@ function SignUp() {
         passed = false;
     }
 
-    if (lname.length > 0 && fname.length < 255) {
+    if (lname.val().length > 0 && fname.val().length < 255) {
         lname.removeClass("is-invalid");
         lname.addClass("is-valid");
     } else {
@@ -49,7 +49,7 @@ function SignUp() {
         passed = false;
     }
 
-    if (username.length > 0 && username.length < 255) {
+    if (username.val().length > 0 && username.val().length < 255) {
         username.removeClass("is-invalid");
         username.addClass("is-valid");
     } else {
@@ -58,7 +58,7 @@ function SignUp() {
         passed = false;
     }
 
-    if (username.length > 0 && username.length < 255 && username.includes("@")) {
+    if (username.val().length > 0 && username.val().length < 255 && username.val().includes("@")) {
         username.removeClass("is-invalid");
         username.addClass("is-valid");
     } else {
@@ -67,7 +67,7 @@ function SignUp() {
         passed = false;
     }
 
-    if (password.length > 7 && password.length < 255) {
+    if (password.val().length > 7 && password.val().length < 255) {
         password.removeClass("is-invalid");
         password.addClass("is-valid");
     } else {
@@ -81,11 +81,11 @@ function SignUp() {
             url: 'signup.php',
             method: "POST",
             data: {
-                firstname: fname,
-                lastname: lname,
-                email: email,
-                username: username,
-                password: password
+                firstname: fname.val(),
+                lastname: lname.val(),
+                email: email.val(),
+                username: username.val(),
+                password: password.val()
             }
         }).done(function (data) {
             $("#signUpSpinner").addClass("visually-hidden");
