@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
     // jQuery methods go here...
 
@@ -48,6 +48,8 @@ function SignIn() { // TODO finish sign in verification
                 $("#signInSuccess").removeClass("visually-hidden");
                 setTimeout(function () {
                     $("#signInSuccess").addClass("visually-hidden");
+                    $("#signInDropdown").removeClass("show")
+                    location.reload();
                 }, 1000)
 
             }

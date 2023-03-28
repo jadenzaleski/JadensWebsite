@@ -3,7 +3,7 @@ require 'dbConnect.php';
 
 $con = connect();
 
-if ( !isset($_POST['username'], $_POST['password']) ) {
+if (!isset($_POST['username'], $_POST['password'])) {
     // Could not get the data that should have been sent.
     exit('Please fill both the username and password fields!');
 }

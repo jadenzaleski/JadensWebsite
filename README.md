@@ -20,4 +20,5 @@ A basic portfolio and small demonstration of what I spend my free time on. Feel 
 - [ ] comment all code -_-
 - [x] secure passwords
 - [ ] download 383 site
+- [ ] create user profile page
 
