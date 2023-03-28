@@ -4,7 +4,6 @@ $(document).ready(function () {
 
 });
 
-// TODO clear text from boxes
 function SignIn() { // TODO finish sign in verification
     const username = $("#loginFormUsername");
     const password = $("#loginFormPassword");
