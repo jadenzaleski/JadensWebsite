@@ -121,12 +121,8 @@ session_start();
                     </svg>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end p-4" style="width: 300px !important;" id="profile">
-                    <p>
-                        Some example text that's free-flowing within the dropdown menu.
-                    </p>
-                    <p class="mb-0">
-                        And this is more example text.
-                    </p>
+<!--                    TODO finish sign in drop down-->
+                    <hr class="dropdown-divider">
                 </div>
             </div>
             <?php } else { ?>
