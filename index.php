@@ -107,9 +107,9 @@ session_start();
                 <?php
                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']) { ?>
                     Hello, <?php echo $_SESSION['firstname'] ?>
-                    <a type="button" href="profile.php" target="_blank"
+                    <a href="profile.php" target="_blank"
                             class="btn pt-1 ms-md-0 mb-2 mb-md-0 float-end caret-off border-0"
-                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            tabindex="-1" role="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                          class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
