@@ -121,7 +121,7 @@ session_start();
                     </svg>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end p-4 text-center" style="width: 300px !important;">
-                    <h5><?php echo $_SESSION['name'] . ' ' . $_SESSION['lastname']?></h5>
+                    <h5><?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname']?></h5>
                     <hr class="dropdown-divider">
                     <div class="text-start">
                         <p class="mb-1">Username: <?php echo $_SESSION['username']?></p>
