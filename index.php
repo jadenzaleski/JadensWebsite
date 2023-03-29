@@ -28,7 +28,7 @@ session_start();
 
 <nav class="navbar navbar-expand-md navbar-main">
     <div class="container-fluid">
-        <a class="navbar-brand ms-0 me-2" href="#">
+        <a class="navbar-brand ms-0 me-2 mb-1" href="#">
             <img alt="logo" height="32" src="images/android-chrome-512x512.png" width="32">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -103,7 +103,7 @@ session_start();
                 </li>
             </ul>
 
-            <span class="navbar-text float-start float-md-none mb-1">
+            <span class="navbar-text float-start float-md-none mb-1 align-middle">
                 <?php
                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']) { ?>
                     Hello, <?php echo $_SESSION['firstname'] ?>
