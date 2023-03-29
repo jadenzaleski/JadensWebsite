@@ -28,7 +28,7 @@ session_start();
 
 <nav class="navbar navbar-expand-md navbar-main">
     <div class="container-fluid">
-        <a class="navbar-brand ms-0 me-2 mb-1" href="#">
+        <a class="navbar-brand ms-0 me-2" href="#">
             <img alt="logo" height="32" src="images/android-chrome-512x512.png" width="32">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -107,23 +107,8 @@ session_start();
                 <?php
                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']) { ?>
                     Hello, <?php echo $_SESSION['firstname'] ?>
-            </span>
-                    <a href="profile.php" target="_blank"
-                            class="btn pt-1 ms-md-0 mb-2 mb-md-0 float-end caret-off border-0"
-                            tabindex="-1" role="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                         class="bi bi-person-circle" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                        <path fill-rule="evenodd"
-                              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                    </svg>
-                </a>
-                <?php } else { ?>
-                    Login / Sign Up
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-chevron-right m-0" viewBox="0 0 16 16"><path fill-rule="evenodd"
-                                                                                   d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
-            </span>
+
+                    </span>
             <div class="dropdown">
                 <button type="button"
                         class="btn login-button pt-1 ms-md-0 mb-2 mb-md-0 float-end dropdown-toggle caret-off border-0"
@@ -135,64 +120,94 @@ session_start();
                               d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                     </svg>
                 </button>
-                <div class="dropdown-menu dropdown-menu-end p-4" id="signInDropdown">
-                    <form class="login-form" action="authenticate.php" method="post">
-                        <div class="mb-3">
-                            <label for="loginFormUsername" class="form-label">Username:</label>
-                            <input type="text" name="username" class="form-control" id="loginFormUsername"
-                                   placeholder="username">
-                            <div class="invalid-feedback">
-                                Username must be between 1 and 255 characters.
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="loginFormPassword" class="form-label">Password:</label>
-                            <input type="password" name="password" class="form-control" id="loginFormPassword"
-                                   placeholder="password">
-                            <div class="invalid-feedback">
-                                Password must be between 8 and 255 characters.
-                            </div>
-                        </div>
-                        <button type="button" onclick="SignIn();" class="btn w-100">Sign in</button>
-                    </form>
-                    <div class="alert alert-danger d-flex align-items-center small mt-3 visually-hidden" role="alert"
-                         id="incorrectSignIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             role="img" aria-label="Warning:" class="bi bi-exclamation-triangle flex-shrink-0 me-2"
-                             viewBox="0 0 16 16">
-                            <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
-                            <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
-                        </svg>
-                        <span>
-                            Incorrect username and/or password.
-                        </span>
-                    </div>
-                    <div class="alert alert-success d-flex align-items-center small mt-3 visually-hidden" role="alert"
-                         id="signInSuccess">
-                        <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Success!" width="16"
-                             height="16" fill="currentColor" class="bi bi-check-lg flex-shrink-0 me-2"
-                             viewBox="0 0 16 16">
-                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
-                        </svg>
-                        <span>
-                            Success!
-                        </span>
-                    </div>
-                    <div class="text-center">
-                        <div class="spinner-border mt-3 visually-hidden" role="status" id="signInSpinner">
-                            <span class="visually-hidden">Loading...</span>
-                        </div>
-                    </div>
-                    <div class="dropdown-divider mt-3"></div>
-                    <p class="dropdown-header">
-                        <button class="p-0 m-0 text-decoration-underline border-0 bg-transparent" type="button"
-                                data-bs-toggle="modal" data-bs-target="#SignUpModal">Sign up
-                        </button>
-                        |
-                        <a href="mailto:jadenzaleski@icloud.com?subject=Forgot%20Password&body=Hello%2C%0D%0AI%20have%20forgotten%20my%20password.">Forgot
-                            password?</a></p>
+                <div class="dropdown-menu dropdown-menu-end p-4" id="profile">
+                    <p>
+                        Some example text that's free-flowing within the dropdown menu.
+                    </p>
+                    <p class="mb-0">
+                        And this is more example text.
+                    </p>
                 </div>
             </div>
+            <?php } else { ?>
+                Login / Sign Up
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-chevron-right m-0" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                </span>
+                <div class="dropdown">
+                    <button type="button"
+                            class="btn login-button pt-1 ms-md-0 mb-2 mb-md-0 float-end dropdown-toggle caret-off border-0"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                             class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd"
+                                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end p-4" id="signInDropdown">
+                        <form class="login-form" action="authenticate.php" method="post">
+                            <div class="mb-3">
+                                <label for="loginFormUsername" class="form-label">Username:</label>
+                                <input type="text" name="username" class="form-control" id="loginFormUsername"
+                                       placeholder="username">
+                                <div class="invalid-feedback">
+                                    Username must be between 1 and 255 characters.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="loginFormPassword" class="form-label">Password:</label>
+                                <input type="password" name="password" class="form-control" id="loginFormPassword"
+                                       placeholder="password">
+                                <div class="invalid-feedback">
+                                    Password must be between 8 and 255 characters.
+                                </div>
+                            </div>
+                            <button type="button" onclick="SignIn();" class="btn w-100">Sign in</button>
+                        </form>
+                        <div class="alert alert-danger d-flex align-items-center small mt-3 visually-hidden"
+                             role="alert"
+                             id="incorrectSignIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 role="img" aria-label="Warning:" class="bi bi-exclamation-triangle flex-shrink-0 me-2"
+                                 viewBox="0 0 16 16">
+                                <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                                <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+                            </svg>
+                            <span>
+                            Incorrect username and/or password.
+                        </span>
+                        </div>
+                        <div class="alert alert-success d-flex align-items-center small mt-3 visually-hidden"
+                             role="alert"
+                             id="signInSuccess">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Success!" width="16"
+                                 height="16" fill="currentColor" class="bi bi-check-lg flex-shrink-0 me-2"
+                                 viewBox="0 0 16 16">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                            </svg>
+                            <span>
+                            Success!
+                        </span>
+                        </div>
+                        <div class="text-center">
+                            <div class="spinner-border mt-3 visually-hidden" role="status" id="signInSpinner">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider mt-3"></div>
+                        <p class="dropdown-header">
+                            <button class="p-0 m-0 text-decoration-underline border-0 bg-transparent" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#SignUpModal">Sign up
+                            </button>
+                            |
+                            <a href="mailto:jadenzaleski@icloud.com?subject=Forgot%20Password&body=Hello%2C%0D%0AI%20have%20forgotten%20my%20password.">Forgot
+                                password?</a></p>
+                    </div>
+                </div>
             <?php } ?>
         </div>
     </div>
