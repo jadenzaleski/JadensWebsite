@@ -103,10 +103,11 @@ session_start();
                 </li>
             </ul>
 
-            <span class="navbar-text float-start float-md-none mb-1 align-middle">
+            <span class="navbar-text float-start float-md-none mb-1">
                 <?php
                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']) { ?>
                     Hello, <?php echo $_SESSION['firstname'] ?>
+            </span>
                     <a href="profile.php" target="_blank"
                             class="btn pt-1 ms-md-0 mb-2 mb-md-0 float-end caret-off border-0"
                             tabindex="-1" role="button">
