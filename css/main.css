@@ -74,6 +74,15 @@ body {
     background-color: var(--jaden-blue);
 }
 
+#logout {
+    border: 1px solid var(--jaden-blue);
+    color: var(--jaden-black);
+}
+
+#logout:hover {
+    background-color: var(--jaden-blue);
+}
+
 .dropdown-header a {
     color: var(--jaden-blue);
 }
