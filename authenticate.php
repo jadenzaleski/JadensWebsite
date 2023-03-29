@@ -35,6 +35,7 @@ if ($stmt->num_rows > 0) {
         $_SESSION['email'] = $email;
         $_SESSION['username'] = $username;
         $_SESSION['id'] = $id;
+        $_SESSION['since'] = $since;
         echo 'Welcome ' . $firstname . '!';
     } else {
         // Incorrect password
