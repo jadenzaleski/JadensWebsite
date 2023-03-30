@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>History</title>
+		<meta author="Jaden Zaleski">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+		<link href="main.css" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<script src="iconVars.js"></script>
+		<script src="main.js"></script>
+	</head>
+	<nav class="navbar navbar-expand-sm px-3 text-dark">
+		<a class="navbar-brand me-2" href="index.html">
+			<img src="images/apple-touch-icon.png" alt="Bootstrap" width="32" height="32">
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav me-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="weather.html">Weather</a>
+				</li>
+				<li class="nav-item active fw-bolder">
+					<a class="nav-link" href="history.html">History</a>
+				</li>
+			</ul>
+			<span class="navbar-text">By Jaden Zaleski</span>
+		</div>
+	</nav>
+	<body>
+		<div class="container" id="hc">
+			<div class="row">
+				<form class="py-3 col-md-12">
+					<label for="historySearch" class="form-label fs-5">Find weather from previous query date (provide maximum output number):</label>
+					<div class="input-group">
+						<input type="date" id="historySearch" class="form-control text-dark pb-0" value="2022-12-25">
+						<input type="number" id="maxNum" class="form-control text-dark" value="3">
+						<button class="btn" type="button" id="historySearchBtn">Search</button>
+					</div>
+				</form>
+				<div class="col-md-12 table-responsive">
+					<table class="table table-striped text-center">
+					</table>
+
+					<div class="modal modal-xl fade" id="tableInfoModal" tabindex="-1" aria-labelledby="tableInfoModal" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header border-dark">
+									<h5 class="modal-title" id="tableInfoModalLabel">12-25-2022</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body p-4">
+									<div class="weatherBox"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
