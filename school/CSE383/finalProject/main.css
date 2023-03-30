@@ -1,0 +1,74 @@
+/*
+ * primary: #4E89AE
+ * secondary: #43658B
+ * accent: #ED6663
+ * highlight: #FFA372
+ * */
+
+* {
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+html, body, .modal-header, .modal-body {
+	background-color: #43658B;
+}
+
+#hc {
+	background-color: #4E89AE;
+	border-radius: 0px 0px 10px 10px;
+	box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+.navbar {
+	background-color: #ED6663;
+}
+
+.pIndent {
+	text-indent: 20px;
+}
+
+#historySearchBtn, #weatherSearchBtn {
+	background-color: #FFA372;
+}
+
+#historySearchBtn:hover, #weatherSearchBtn:hover {
+	background-color: #4E89AE;
+	border: 1px solid #FFA372;
+	color: #FFA372;
+}
+
+#historySearch, #maxNum, #weatherSearch {
+	background-color: #4E89AE;
+	border: 1px solid #FFA372;
+}
+
+#historySearch, #weatherSearch::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #5c5c5c;
+	opacity: 1; /* Firefox */
+}
+
+#historySearch, #weatherSearch:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #5c5c5c;
+}
+
+#historySearch, #weatherSearch::-ms-input-placeholder { /* Microsoft Edge */
+	color: #5c5c5c;
+}
+
+.card {
+	background-color: #4E89AE; 
+}
+
+.bi {
+	color: #FFA372;
+}
+
+.table {
+	border-color: rgb(255, 163, 114, 0.25);
+}
+
+.spinner-border {
+	color: #FFA372;
+}

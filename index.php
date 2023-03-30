@@ -56,7 +56,8 @@ session_start();
                     <ul class="dropdown-menu">
                         <li><h6 class="dropdown-header">School:</h6></li>
                         <li><span class="dropdown-item-text">Dropdown item text</span></li>
-                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="school/CSE383/finalProject">CSE383, Weather App <span
+                                class="text-muted">(Apr 2022)</span></a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li>
                             <hr class="dropdown-divider">
