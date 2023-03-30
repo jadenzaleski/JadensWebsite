@@ -47,7 +47,7 @@
 $password = 'august30';
 
 //directory relative to this file to search for databases (if false, manually list databases in the $databases variable)
-$directory = '/school/CSE383/finalProject/';
+$directory = 'finalProject/';
 
 //whether or not to scan the subdirectories of the above directory infinitely deep
 $subdirectories = false;
@@ -425,7 +425,7 @@ $lang = array(
 //- Initialization
 
 // load optional configuration file
-$config_filename = './phpliteadmin.config.php';
+$config_filename = 'phpliteadmin.config.php';
 if (is_readable($config_filename))
 {
 	include_once $config_filename;
