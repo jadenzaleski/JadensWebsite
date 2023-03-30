@@ -172,7 +172,7 @@ session_start();
                                     Password must be between 8 and 255 characters.
                                 </div>
                             </div>
-                            <button type="button" onclick="SignIn();" class="btn w-100">Sign in</button>
+                            <button type="button" onclick="signIn();" class="btn w-100">Sign in</button>
                         </form>
                         <div class="alert alert-danger d-flex align-items-center small mt-3 visually-hidden"
                              role="alert"
@@ -268,7 +268,7 @@ session_start();
                         </div>
                     </div>
                     <div class="col-12">
-                        <button type="button" onclick="SignUp();" class="btn w-100">Submit</button>
+                        <button type="button" onclick="signUp();" class="btn w-100">Submit</button>
                     </div>
                     <div class="col-12">
                         <div class="text-center">

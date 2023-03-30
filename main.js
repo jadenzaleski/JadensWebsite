@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 });
 
-function SignIn() {
+function signIn() {
     const username = $("#loginFormUsername");
     const password = $("#loginFormPassword");
     let passed = true;
@@ -59,7 +59,7 @@ function SignIn() {
     console.log("SignIn fired")
 }
 
-function SignUp() {
+function signUp() {
     const fname = $("#signUpFirstName");
     const lname = $("#signUpLastName");
     const email = $("#signUpEmail");
@@ -145,4 +145,16 @@ function SignUp() {
         });
     }
     console.log("SignIn fired")
+}
+
+function logout() {
+    a = $.ajax({
+        url: 'logout.php',
+        method: "POST"
+    }).done(function () {
+        console.log("logged out");
+        location.reload();
+    }).fail(function (error) {
+        console.log("logout error", error.statusText);
+    });
 }
