@@ -4,7 +4,8 @@
    Kurt Johnson
    display temps
  */
-$DBSTRING = "cse383.db";  // This must be updated to your real database location
+//$DBSTRING = "sqlite:/home/ubuntu/cse383/database/cse383.db";
+$DBSTRING = "sqlite:cse383.db";  // This must be updated to your real database location
 include "sql.inc";
 include "final.class.php";
 
