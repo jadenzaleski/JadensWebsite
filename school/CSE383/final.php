@@ -5,7 +5,7 @@
    display temps
  */
 //$DBSTRING = "sqlite:/home/ubuntu/cse383/database/cse383.db";
-$DBSTRING = "sqlite:/jadenzaleski.ddns.com/school/CSE383/finalProject/cse383.db";  // This must be updated to your real database location
+$DBSTRING = "sqlite:cse383.db";  // This must be updated to your real database location
 include "sql.inc";
 include "final.class.php";
 
