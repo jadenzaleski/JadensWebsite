@@ -134,3 +134,7 @@ footer {
 .social-button-link:hover {
     color: var(--jaden-blue);
 }
+
+.text-black {
+    color: var(--jaden-black) !important;
+}
