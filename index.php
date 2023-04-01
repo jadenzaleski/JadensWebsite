@@ -55,10 +55,9 @@ session_start();
                         Projects</a>
                     <ul class="dropdown-menu">
                         <li><h6 class="dropdown-header">School:</h6></li>
-                        <li><span class="dropdown-item-text">Dropdown item text</span></li>
-                        <li><a class="dropdown-item" href="school/CSE383/finalProject">CSE383, Weather App <span
-                                class="text-muted">(Oct 2022)</span></a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="school/CSE383/finalProject" target="_blank">CSE383, Weather
+                                App <span
+                                        class="text-muted">(Oct 2022)</span></a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -122,17 +121,23 @@ session_start();
                     </svg>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end p-4 text-center" style="width: 300px !important;">
-                    <h5><?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname']?></h5>
+                    <h5><?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname'] ?></h5>
                     <hr class="dropdown-divider">
                     <div class="text-start">
-                        <p class="mb-1">Username: <?php echo $_SESSION['username']?></p>
-                        <p class="mb-1">Email: <?php echo $_SESSION['email']?></p>
-                        <p class="mb-1">User since: <?php echo $_SESSION['since']?></p>
+                        <p class="mb-1">Username: <?php echo $_SESSION['username'] ?></p>
+                        <p class="mb-1">Email: <?php echo $_SESSION['email'] ?></p>
+                        <p class="mb-1">User since: <?php echo $_SESSION['since'] ?></p>
                     </div>
-                    <button class="btn w-100 mt-1" id="logout" onclick="logout()" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right mb-1 me-1" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
-                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-                        </svg>Logout</button>
+                    <button class="btn w-100 mt-1" id="logout" onclick="logout()" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-box-arrow-right mb-1 me-1" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                            <path fill-rule="evenodd"
+                                  d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                        </svg>
+                        Logout
+                    </button>
                 </div>
             </div>
             <?php } else { ?>
@@ -309,10 +314,104 @@ session_start();
 <main class="container">
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Hello!</h1>
-                <p class="lead text-muted">have responsive picture and general explanation with details on what the site
-                    is. include LinkedIn/GitHub and also refer to info tab. talk about general site navigation and login.
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <h1 class="fw-light text-black">Hello!</h1>
+                <img src="https://placehold.co/250x350" class="rounded float-start me-2" alt="Jaden">
+                <p class="text-black text-start">have responsive picture and general explanation with details on what the site
+                    is. include LinkedIn/GitHub and also refer to info tab. talk about general site navigation and
+                    login.
+                </p> <p class="text-start">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus
+                    semper. Vitae nunc sed velit dignissim sodales ut. Enim sed faucibus turpis in eu mi bibendum neque
+                    egestas. Id volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis
+                    feugiat. Faucibus scelerisque eleifend donec pretium. In metus vulputate eu scelerisque felis
+                    imperdiet proin fermentum leo. Amet consectetur adipiscing elit duis tristique sollicitudin nibh
+                    sit. At tellus at urna condimentum mattis pellentesque id nibh tortor. Aliquet bibendum enim
+                    facilisis gravida. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Non pulvinar
+                    neque laoreet suspendisse. Sodales ut eu sem integer vitae justo eget magna fermentum. Aliquet eget
+                    sit amet tellus cras. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Sapien
+                    eget mi proin sed. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Fames
+                    ac turpis egestas integer eget. Enim praesent elementum facilisis leo.
+
+                    Et netus et malesuada fames ac turpis egestas. Velit ut tortor pretium viverra suspendisse potenti.
+                    Dolor sit amet consectetur adipiscing elit duis. Dolor sit amet consectetur adipiscing elit. Elit
+                    pellentesque habitant morbi tristique. In ante metus dictum at tempor commodo. Habitant morbi
+                    tristique senectus et netus et malesuada fames ac. Iaculis urna id volutpat lacus laoreet non
+                    curabitur. Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed. Vulputate mi sit amet
+                    mauris. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Mi sit amet mauris commodo
+                    quis imperdiet massa tincidunt nunc. Quis varius quam quisque id.
+
+                    Id diam vel quam elementum pulvinar etiam non. Eget nunc lobortis mattis aliquam faucibus purus in
+                    massa. Eu consequat ac felis donec et odio. Urna neque viverra justo nec ultrices dui. Quam lacus
+                    suspendisse faucibus interdum posuere lorem ipsum. Arcu non odio euismod lacinia at. Eget velit
+                    aliquet sagittis id consectetur. Cum sociis natoque penatibus et magnis. Urna duis convallis
+                    convallis tellus id. Nulla at volutpat diam ut venenatis tellus in metus. Vitae auctor eu augue ut
+                    lectus. Blandit massa enim nec dui nunc. Pharetra massa massa ultricies mi quis hendrerit dolor
+                    magna eget. Massa tincidunt dui ut ornare. Lobortis elementum nibh tellus molestie nunc non blandit
+                    massa enim. Tempus imperdiet nulla malesuada pellentesque. Mattis pellentesque id nibh tortor id
+                    aliquet lectus proin nibh. Nec nam aliquam sem et.
+
+                    In arcu cursus euismod quis viverra. Dui ut ornare lectus sit amet. Sed ullamcorper morbi tincidunt
+                    ornare massa. Id porta nibh venenatis cras sed felis eget velit. In pellentesque massa placerat duis
+                    ultricies lacus sed turpis tincidunt. Cursus eget nunc scelerisque viverra. Molestie a iaculis at
+                    erat pellentesque. Donec enim diam vulputate ut pharetra sit amet aliquam id. Amet est placerat in
+                    egestas erat. Aliquet eget sit amet tellus. Mauris ultrices eros in cursus turpis massa. Gravida
+                    arcu ac tortor dignissim convallis aenean et. Quam lacus suspendisse faucibus interdum. Etiam sit
+                    amet nisl purus. Lobortis feugiat vivamus at augue eget arcu dictum. Malesuada fames ac turpis
+                    egestas sed tempus urna et. Vivamus at augue eget arcu dictum. Sed vulputate odio ut enim blandit
+                    volutpat maecenas volutpat blandit. Sed lectus vestibulum mattis ullamcorper velit. Ornare arcu dui
+                    vivamus arcu felis bibendum ut.
+
+                    Dui accumsan sit amet nulla. Sit amet purus gravida quis blandit turpis cursus. Vulputate mi sit
+                    amet mauris commodo. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Sed
+                    turpis tincidunt id aliquet risus feugiat in ante. Sodales neque sodales ut etiam sit amet nisl
+                    purus. Eu turpis egestas pretium aenean. Gravida arcu ac tortor dignissim convallis aenean et
+                    tortor. Massa tempor nec feugiat nisl pretium fusce. Nibh ipsum consequat nisl vel. Felis donec et
+                    odio pellentesque diam volutpat commodo. Libero nunc consequat interdum varius sit.
+
+                    Elementum eu facilisis sed odio. Leo vel fringilla est ullamcorper eget nulla facilisi etiam. Amet
+                    mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Rhoncus est pellentesque elit
+                    ullamcorper dignissim cras. Aliquet risus feugiat in ante metus dictum. Ipsum faucibus vitae aliquet
+                    nec ullamcorper sit amet. Tempor nec feugiat nisl pretium fusce id velit ut tortor. Viverra aliquet
+                    eget sit amet tellus. Purus in massa tempor nec feugiat nisl pretium fusce id. Vitae congue mauris
+                    rhoncus aenean vel. Consectetur a erat nam at lectus urna duis.
+
+                    Ut pharetra sit amet aliquam id. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus
+                    ornare. Pellentesque habitant morbi tristique senectus et netus. Commodo ullamcorper a lacus
+                    vestibulum sed arcu. Ut morbi tincidunt augue interdum velit euismod in pellentesque. Vestibulum sed
+                    arcu non odio euismod lacinia. Ut tortor pretium viverra suspendisse potenti. Massa id neque aliquam
+                    vestibulum morbi blandit. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Facilisis
+                    volutpat est velit egestas dui id. Eu tincidunt tortor aliquam nulla facilisi cras. Congue mauris
+                    rhoncus aenean vel elit. Augue neque gravida in fermentum. Imperdiet proin fermentum leo vel orci
+                    porta non. Cursus in hac habitasse platea. Laoreet non curabitur gravida arcu ac. Scelerisque in
+                    dictum non consectetur a erat. Arcu dictum varius duis at consectetur lorem donec massa.
+
+                    Amet nulla facilisi morbi tempus iaculis urna id volutpat lacus. Consectetur libero id faucibus nisl
+                    tincidunt eget nullam non. Praesent semper feugiat nibh sed. Eros in cursus turpis massa tincidunt.
+                    Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Curabitur gravida arcu ac
+                    tortor dignissim convallis aenean et tortor. Placerat orci nulla pellentesque dignissim enim sit
+                    amet venenatis urna. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. Sit amet est placerat in egestas erat
+                    imperdiet sed. Risus nullam eget felis eget. Enim neque volutpat ac tincidunt. Augue ut lectus arcu
+                    bibendum at varius vel. Interdum consectetur libero id faucibus nisl tincidunt. Tincidunt lobortis
+                    feugiat vivamus at. Sollicitudin tempor id eu nisl nunc. Nibh mauris cursus mattis molestie a
+                    iaculis at erat pellentesque. Lacinia quis vel eros donec ac odio tempor. Ac felis donec et odio
+                    pellentesque diam volutpat.
+
+                    Eget aliquet nibh praesent tristique magna sit amet purus. Diam phasellus vestibulum lorem sed.
+                    Tempus quam pellentesque nec nam aliquam sem et tortor. Ut tortor pretium viverra suspendisse.
+                    Pretium fusce id velit ut tortor pretium viverra. Vel facilisis volutpat est velit egestas dui id.
+                    Amet nisl purus in mollis nunc sed id. Leo in vitae turpis massa. Lacinia at quis risus sed
+                    vulputate odio ut enim blandit. Nibh sit amet commodo nulla facilisi nullam vehicula.
+
+                    Justo nec ultrices dui sapien eget. Tortor at risus viverra adipiscing at in tellus. Orci ac auctor
+                    augue mauris augue neque gravida. Gravida quis blandit turpis cursus in. Nec dui nunc mattis enim ut
+                    tellus. Semper eget duis at tellus at urna. Molestie a iaculis at erat pellentesque adipiscing. Eget
+                    magna fermentum iaculis eu non. Urna nec tincidunt praesent semper feugiat. Dolor sed viverra ipsum
+                    nunc aliquet bibendum enim. Justo eget magna fermentum iaculis. Sed tempus urna et pharetra pharetra
+                    massa massa ultricies. Sit amet mattis vulputate enim. Commodo elit at imperdiet dui accumsan sit
+                    amet.
                 </p>
             </div>
         </div>
