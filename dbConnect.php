@@ -3,8 +3,8 @@
 function connect() {
     session_start();
     $DATABASE_HOST = 'localhost';
-    $DATABASE_USER = 'root';
-    $DATABASE_PASS = 'august30';
+    $DATABASE_USER = 'JadenUser';
+    $DATABASE_PASS = 'jadenzaleski';
     $DATABASE_NAME = 'jaden_users';
 
     $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
