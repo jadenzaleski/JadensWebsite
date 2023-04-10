@@ -28,7 +28,7 @@ session_start();
 
 <nav class="navbar navbar-expand-md navbar-main">
     <div class="container-fluid">
-        <a class="navbar-brand ms-0 me-2" href="#">
+        <a class="navbar-brand ms-0 me-2" href="http://jadenzaleski.com">
             <img alt="logo" height="32" src="images/android-chrome-512x512.png" width="32">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
