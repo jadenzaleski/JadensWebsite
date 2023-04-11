@@ -62,6 +62,8 @@ session_start();
                             <hr class="dropdown-divider">
                         </li>
                         <li><h6 class="dropdown-header">Personal:</h6></li>
+                        <li><a class="dropdown-item" href="/info.php">This Website <span
+                                    class="text-muted">(Dec 2022-Present)</span></a></li>
                         <li><a class="dropdown-item" href="/personal/CanvasSquares" target="_blank">Canvas Squares <span
                                         class="text-muted">(Apr 2022)</span></a></li>
                         <li><a class="dropdown-item" href="/personal/CandyClicker" target="_blank">Candy Clicker <span
@@ -77,7 +79,7 @@ session_start();
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="info.php" target="_blank">
+                    <a class="nav-link" aria-current="page" href="/info.php" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                              class="bi bi-info-circle me-1 mb-1" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -90,6 +92,8 @@ session_start();
                        target="_blank"><img src="images/miami.png" height="16px" class="m-1 mb-2 ms-0" id="miami-logo"
                                             alt="miami logo">Miami Server</a>
                 </li>
+                <?php
+                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']) { ?>
                 <li class="nav-item">
                     <a class="nav-link" href="node">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -101,6 +105,7 @@ session_start();
                         Node.js
                     </a>
                 </li>
+                <?php } ?>
             </ul>
 
             <span class="navbar-text float-start float-md-none mb-1">
@@ -159,7 +164,7 @@ session_start();
                                   d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                         </svg>
                     </button>
-                    <div class="dropdown-menu dropdown-menu-end p-4" id="signInDropdown">
+                    <div class="dropdown-menu dropdown-menu-end p-4"  id="signInDropdown">
                         <form class="login-form" action="authenticate.php" method="post">
                             <div class="mb-3">
                                 <label for="loginFormUsername" class="form-label">Username:</label>
