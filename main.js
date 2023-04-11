@@ -40,6 +40,7 @@ function signIn() {
                 password: password.val()
             }
         }).done(function (data) {
+
             $("#signInSpinner").addClass("visually-hidden");
             if (data === "failed") {
                 $("#incorrectSignIn").removeClass("visually-hidden");
@@ -56,7 +57,7 @@ function signIn() {
             $("#incorrectSignIn").removeClass("visually-hidden");
         });
     }
-    console.log("SignIn fired")
+    console.log("SignIn fired");
 }
 
 function signUp() {
