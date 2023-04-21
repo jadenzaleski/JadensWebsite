@@ -1,6 +1,7 @@
 <?php
+
        try {
-               $dbconn = new PDO($DBSTRING);
+               $dbconn = new PDO('mysql:host=localhost;dbname=cse383', '$JadenUser', 'jadenzaleski');
        } catch (PDOException $e) {
         		print "Error connecting to database ";
 			print_r($e);
