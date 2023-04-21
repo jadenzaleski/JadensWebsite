@@ -55,11 +55,11 @@ class final_rest
 		return json_encode ($retData);
 	}
 
-	public static function setWeather ($location, $mapJson, $weatherJson)
+	public static function setWeather ($location, $mapjson, $weatherJson)
 
 	{
 		try {
-			EXEC_SQL("insert into weather (Location, MapJson, WeatherJson, DateTime) values (?,?,?,CURRENT_TIMESTAMP)",$location, $mapJson, $weatherJson);
+			EXEC_SQL("insert into weather (Location, MapJson, WeatherJson, DateTime) values (?,?,?,CURRENT_TIMESTAMP)",$location, $mapjson, $weatherJson);
 			$retData["status"]=0;
 			$retData["message"]="location: '$location' accepted";
 		}
