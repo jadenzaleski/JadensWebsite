@@ -83,6 +83,7 @@ $(document).ready(function() {
 		}
 
 		var entry = $("#weatherSearch").val().split(" ").join('%20');
+		// TODO remove api key from public
 		mapURL = "https://api.tomtom.com/search/2/search/" + entry + ".json?limit=1&key=GjZuDrUH8vAZSOEWKvQ2AF6MNiQU51D0";
 
 		console.log(mapURL);
