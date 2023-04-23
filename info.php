@@ -28,7 +28,7 @@ session_start();
 
 <nav class="navbar navbar-expand-md navbar-main">
     <div class="container-fluid">
-        <a class="navbar-brand ms-0 me-2" href="http://jadenzaleski.com">
+        <a class="navbar-brand ms-0 me-2" href="https://jadenzaleski.com">
             <img alt="logo" height="32" src="images/android-chrome-512x512.png" width="32">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -38,7 +38,7 @@ session_start();
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="http://jadenzaleski.com">
+                    <a class="nav-link" aria-current="page" href="https://jadenzaleski.com">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                              class="bi bi-house me-1 mb-1" viewBox="0 0 16 16">
                             <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
@@ -52,7 +52,7 @@ session_start();
                              class="bi bi-braces me-1 mb-1" viewBox="0 0 16 16">
                             <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
                         </svg>
-                        Projects</a>
+                        Projects - UPDATE</a>
                     <ul class="dropdown-menu">
                         <li><h6 class="dropdown-header">School:</h6></li>
                         <li><a class="dropdown-item" href="school/CSE383/finalProject" target="_blank">CSE383, Weather
