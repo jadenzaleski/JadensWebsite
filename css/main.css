@@ -34,6 +34,7 @@ body {
     color: var(--jaden-gray);
 }
 
+/*for miami logo*/
 .nav-item:hover img {
     /* this is --jaden-gray */
     filter: invert(28%) sepia(8%) saturate(770%) hue-rotate(193deg) brightness(96%) contrast(87%);
@@ -63,6 +64,9 @@ body {
     background-color: var(--jaden-white);
     box-shadow: rgba(0, 0, 0, 0.2) 0 15px 45px;
     color: var(--jaden-black);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .login-form button {

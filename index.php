@@ -320,7 +320,7 @@ session_start();
         <div class="row py-lg-5">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <h1 class="fw-light text-black">Hello!</h1>
-                <img src="https://placehold.co/250x350" class="rounded float-start me-2" alt="Jaden">
+                <img src="images/jaden.jpeg" class="rounded float-start me-2" width="275" alt="Jaden">
                 <p class="text-black text-start">have responsive picture and general explanation with details on what the site
                     is. include LinkedIn/GitHub and also refer to info tab. talk about general site navigation and
                     login.
