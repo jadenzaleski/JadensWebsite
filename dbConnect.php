@@ -2,7 +2,6 @@
     session_start();
 function connect() {
     session_start();
-    // TODO remove all sensitive info
     $DATABASE_HOST = 'localhost';
     $DATABASE_USER = 'JadenUser';
     $DATABASE_PASS = 'jadenzaleski';
