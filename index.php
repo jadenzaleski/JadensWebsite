@@ -67,11 +67,9 @@ session_start();
                                         class="text-muted">(Apr 2022)</span></a></li>
                         <li><a class="dropdown-item" href="/personal/CandyClicker" target="_blank">Candy Clicker <span
                                         class="text-muted">(May 2020)</span></a></li>
-                        <li><a class="dropdown-item" href="/personal/ZaleskiPage" target="_blank">Zaleski Page <span
-                                        class="text-muted">(Oct 2019)</span></a></li>
                         <li><a class="dropdown-item" href="/personal/ColorPicker" target="_blank">Color Picker <span
                                         class="text-muted">(Mar 2018)</span></a></li>
-                        <li><a class="dropdown-item" href="/personal/SwimTeamV2" target="_blank">Swim Team V2 <span
+                        <li><a class="dropdown-item disabled text-decoration-line-through" href="/personal/SwimTeamV2" target="_blank">Swim Team V2 <span
                                         class="text-muted">(Feb 2018)</span></a></li>
                         <li><a class="dropdown-item" href="/personal/SwimTeamV1" target="_blank">Swim Team V1 <span
                                         class="text-muted">(Jun 2017)</span></a></li>
