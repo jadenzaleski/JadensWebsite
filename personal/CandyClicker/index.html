@@ -10,17 +10,39 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">    
-    
+    <link rel="manifest" href="./site.webmanifest">
+
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="main.js" defer></script> <!--type="text/javascript"--> 
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <!-- beginning of alert meta -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="/css/vars.css" rel="stylesheet">
+    <link href="/css/alertInfo.css" rel="stylesheet">
+    <!-- end of alert meta -->
+
 </head>
-<nav>
-    
-</nav>
-<body id="mainBox" onload="start();">
+<body onload="start();">
+<!-- beginning of alert html -->
+<div class="alert alert-info alert-dismissible fade show" role="alert">
+    <h5 class="alert-heading text-start px-5">Description</h5>
+    <hr class="mx-5 my-1">
+    <p class="mb-0 px-5 text-start">This game is super simple where all you have to do is click the button to collect candy.
+    The objective of the game is to get as much candy as you can and collect items you find along the way.
+        The game slowly
+    unlocks more features as you collect more candies and eat them.
+        This took me a few weeks to make back in May 2020, and the
+    purpose was gain a better understanding of javascript and how to properly structure a project.</p>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<!-- end of alert html -->
+<div id="mainBox">
     <div id="candiesBox">
         <p class="margin3" id="ground">there is 1 candy on the ground</p>
         <button class="margin3" id="grabCandy" onclick="collectCandy();">grab candies</button>
@@ -65,6 +87,10 @@
         </div>
         
     </div>
-    
+    <!-- alert js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+</div>
 </body>
 </html>

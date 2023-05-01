@@ -1,8 +1,3 @@
-* {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 12px;
-}
-
 .margin3 {
     margin: 3px;
 }
@@ -32,6 +27,8 @@
     padding-top: 0;
     margin: auto;
     border: 1px dashed black;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
 }
 
 #candiesBox {
