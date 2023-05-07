@@ -37,7 +37,7 @@ session_start();
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
+                <li class="nav-item hover-underline">
                     <a class="nav-link active fw-bolder" aria-current="page" href="https://jadenzaleski.com">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                              class="bi bi-house me-1 mb-1" viewBox="0 0 16 16">
@@ -45,7 +45,7 @@ session_start();
                         </svg>
                         Home</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown hover-underline">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -55,43 +55,43 @@ session_start();
                         Projects</a>
                     <ul class="dropdown-menu">
                         <li><h6 class="dropdown-header">School:</h6></li>
-                        <li><a class="dropdown-item" href="school/CSE383/finalProject" target="_blank">CSE383, Weather
+                        <li><a class="dropdown-item hover-underline" href="school/CSE383/finalProject" target="_blank">CSE383, Weather
                                 App <span class="text-muted">(Nov 2022)</span></a></li><li>
-                        <li><a class="dropdown-item" href="http://ceclnx01.cec.miamioh.edu/~zaleskjr/cse383/cse383_projects/hw10" target="_blank">CSE383, API Calculator <span class="text-muted">(Oct 2022)</span></a></li><li>
+                        <li><a class="dropdown-item hover-underline" href="http://ceclnx01.cec.miamioh.edu/~zaleskjr/cse383/cse383_projects/hw10" target="_blank">CSE383, API Calculator <span class="text-muted">(Oct 2022)</span></a></li><li>
                             <hr class="dropdown-divider">
                         </li>
                         <li><h6 class="dropdown-header">Personal:</h6></li>
-                        <li><a class="dropdown-item" href="/info.php">This Website <span
+                        <li><a class="dropdown-item hover-underline" href="/Documentation.php">This Website <span
                                     class="text-muted">(Dec 2022-Present)</span></a></li>
-                        <li><a class="dropdown-item" href="/personal/CanvasSquares" target="_blank">Canvas Squares <span
+                        <li><a class="dropdown-item hover-underline" href="/personal/CanvasSquares" target="_blank">Canvas Squares <span
                                         class="text-muted">(Apr 2022)</span></a></li>
-                        <li><a class="dropdown-item" href="/personal/CandyClicker" target="_blank">Candy Clicker <span
+                        <li><a class="dropdown-item hover-underline" href="/personal/CandyClicker" target="_blank">Candy Clicker <span
                                         class="text-muted">(May 2020)</span></a></li>
-                        <li><a class="dropdown-item" href="/personal/ColorPicker" target="_blank">Color Picker <span
+                        <li><a class="dropdown-item hover-underline" href="/personal/ColorPicker" target="_blank">Color Picker <span
                                         class="text-muted">(Mar 2018)</span></a></li>
                         <li><a class="dropdown-item disabled text-decoration-line-through" href="/personal/SwimTeamV2" target="_blank">Swim Team V2 <span
                                         class="text-muted">(Feb 2018)</span></a></li>
-                        <li><a class="dropdown-item" href="/personal/SwimTeamV1" target="_blank">Swim Team V1 <span
+                        <li><a class="dropdown-item hover-underline" href="/personal/SwimTeamV1" target="_blank">Swim Team V1 <span
                                         class="text-muted">(Jun 2017)</span></a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/info.php">
+                <li class="nav-item hover-underline">
+                    <a class="nav-link" aria-current="page" href="/Documentation.php">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                              class="bi bi-info-circle me-1 mb-1" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                             <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                         </svg>
-                        Info</a>
+                        Documentation</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item hover-underline">
                     <a class="nav-link" aria-current="page" href="https://ceclnx01.cec.miamioh.edu/~zaleskjr/"
                        target="_blank"><img src="images/miami.png" height="16px" class="m-1 mb-2 ms-0" id="miami-logo"
                                             alt="miami logo">Miami Server</a>
                 </li>
                 <?php
                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']) { ?>
-                <li class="nav-item">
+                <li class="nav-item hover-underline">
                     <a class="nav-link" href="node">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                              class="bi bi-speedometer2 me-1 mb-1" style="margin-bottom: 2px;" viewBox="0 0 16 16">

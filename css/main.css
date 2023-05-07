@@ -32,6 +32,11 @@ body {
 
 .nav-item:hover a {
     color: var(--jaden-gray);
+    /*text-decoration: underline;*/
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
 }
 
 /*for miami logo*/
@@ -49,6 +54,7 @@ body {
 
 .dropdown-item {
     color: var(--jaden-black) !important;
+    text-decoration: none;
 }
 
 .dropdown-item:hover {
@@ -76,6 +82,10 @@ body {
 
 .login-form button:hover {
     background-color: var(--jaden-blue);
+}
+
+.active {
+    text-decoration: underline;
 }
 
 #logout {
@@ -152,3 +162,34 @@ footer {
 .text-black {
     color: var(--jaden-black) !important;
 }
+
+.text-white {
+    color: var(--jaden-white) !important;
+}
+
+.documentation-nav {
+    background-color: var(--jaden-black);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 10px 40px;
+}
+
+.documentation-nav a {
+    color: var(--jaden-white);
+
+}
+
+.nav-link:focus, .nav-link:hover, .nav-link:active {
+    color: var(--jaden-white) !important;
+}
+
+.documentation-nav a:hover, .documentation-nav .active {
+    background-color: var(--jaden-blue) !important;
+    color: var(--jaden-black) !important;
+    text-decoration: underline;
+}
+
+.documentation-nav .dropdown-menu {
+    background-color: var(--jaden-white) !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 15px 45px;
+}
+

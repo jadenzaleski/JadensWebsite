@@ -81,12 +81,12 @@
     border: 1px dashed black;
 }
 
-#findListNavLi {
+.findListNavLi {
     display: inline;
 
 }
 
-#findListNavA {
+.findListNavA {
     display: inline-block;
     padding: 2px 36px 3px 36px;
     
