@@ -325,10 +325,22 @@ session_start();
         <div class="row py-lg-5">
             <div class="col-lg-8 col-md-10 mx-auto text-black">
                 <h1 class="fw-light text-black">Hello! Website still in progress</h1>
-                <img src="images/jaden.jpeg" class="rounded float-start me-2" id="jaden" alt="Jaden">
-                <p class=" text-start">have responsive picture and general explanation with details on what the site
-                    is. include LinkedIn/GitHub and also refer to info tab. talk about general site navigation and
-                    login.
+                <img src="images/jaden.jpeg" class="rounded me-2" id="jaden" alt="Jaden">
+                <p class="text-start text-indent">
+                    Welcome! My name is Jaden Zaleski, and I am currently an undergraduate student at Miami University in Oxford, Ohio. I am studying Computer Science, and I plan to graduate in May 2023. I made this website to display some of the personal and school projects I have created over the past few years.
+                </p>
+                <p class="text-start text-indent">
+                    The Projects tab is an extensive showcase of my personal and school projects, providing a glimpse into the diverse range of work I have undertaken in the past few years. With a user-friendly dropdown menu, it allows easy navigation through the various projects I have completed. By clicking on a specific project, visitors will be directed to the project's dedicated page and a detailed description above each website, offering valuable insights and context into the project's purpose, objectives, critiques, and notable features.
+                </p>
+                <p class="text-start text-indent">
+                    The Documentation tab takes you to a page that has a detailed description of how I created this website. It includes information on the various hardware components I used, along with all of the software and frameworks needed to complete the site. I also explain how I connected the domain and got a free SSL.
+                </p>
+                <p class="text-start text-indent">
+                    The Miami Server tab provides easy access to the Miami Linux server, a platform that houses individual HTML pages for each student. These pages serve as repositories for a wide range of website-specific projects and assignments I completed during my time at Miami. The server acts as a central hub for showcasing the diverse array of skills and accomplishments attained through various courses and projects at school. By navigating this tab, you get insight into the innovative and creative projects, spanning a multitude of web development and design projects.
+                </p>
+                <p class="text-start text-indent">
+                    This website offers users the ability to create personalized accounts, granting access to the Node.js tab. With your account, you gain the ability to see the creation date, username, and email associated with your profile. Additionally, the footer of the site provides links to explore my professional presence on GitHub and LinkedIn, as well as a direct way to contact me via email.
+                </p>
             </div>
         </div>
     </section>
