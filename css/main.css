@@ -141,6 +141,7 @@ main {
     #jaden {
         width: 225px;
     }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -210,3 +211,11 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.2) 0 15px 45px;
 }
 
+
+.text-link {
+    color: var(--jaden-black);
+}
+
+.text-link:hover {
+    color: var(--jaden-blue);
+}

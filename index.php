@@ -45,8 +45,8 @@ session_start();
                         </svg>
                         Home</a>
                 </li>
-                <li class="nav-item dropdown hover-underline">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle hover-underline" href="#" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                              class="bi bi-braces me-1 mb-1" viewBox="0 0 16 16">
@@ -55,23 +55,34 @@ session_start();
                         Projects</a>
                     <ul class="dropdown-menu">
                         <li><h6 class="dropdown-header">School:</h6></li>
-                        <li><a class="dropdown-item hover-underline" href="school/CSE383/finalProject" target="_blank">CSE383, Weather
-                                App <span class="text-muted">(Nov 2022)</span></a></li><li>
-                        <li><a class="dropdown-item hover-underline" href="http://ceclnx01.cec.miamioh.edu/~zaleskjr/cse383/cse383_projects/hw10" target="_blank">CSE383, API Calculator <span class="text-muted">(Oct 2022)</span></a></li><li>
+                        <li><a class="dropdown-item hover-underline" href="school/CSE383/finalProject" target="_blank">CSE383,
+                                Weather
+                                App <span class="text-muted">(Nov 2022)</span></a></li>
+                        <li>
+                        <li><a class="dropdown-item hover-underline"
+                               href="http://ceclnx01.cec.miamioh.edu/~zaleskjr/cse383/cse383_projects/hw10"
+                               target="_blank">CSE383, API Calculator <span class="text-muted">(Oct 2022)</span></a>
+                        </li>
+                        <li>
                             <hr class="dropdown-divider">
                         </li>
                         <li><h6 class="dropdown-header">Personal:</h6></li>
                         <li><a class="dropdown-item hover-underline" href="/Documentation.php">This Website <span
-                                    class="text-muted">(Dec 2022-Present)</span></a></li>
-                        <li><a class="dropdown-item hover-underline" href="/personal/CanvasSquares" target="_blank">Canvas Squares <span
+                                        class="text-muted">(Dec 2022-Present)</span></a></li>
+                        <li><a class="dropdown-item hover-underline" href="/personal/CanvasSquares" target="_blank">Canvas
+                                Squares <span
                                         class="text-muted">(Apr 2022)</span></a></li>
-                        <li><a class="dropdown-item hover-underline" href="/personal/CandyClicker" target="_blank">Candy Clicker <span
+                        <li><a class="dropdown-item hover-underline" href="/personal/CandyClicker" target="_blank">Candy
+                                Clicker <span
                                         class="text-muted">(May 2020)</span></a></li>
-                        <li><a class="dropdown-item hover-underline" href="/personal/ColorPicker" target="_blank">Color Picker <span
+                        <li><a class="dropdown-item hover-underline" href="/personal/ColorPicker" target="_blank">Color
+                                Picker <span
                                         class="text-muted">(Mar 2018)</span></a></li>
-                        <li><a class="dropdown-item disabled text-decoration-line-through" href="/personal/SwimTeamV2" target="_blank">Swim Team V2 <span
+                        <li><a class="dropdown-item disabled text-decoration-line-through" href="/personal/SwimTeamV2"
+                               target="_blank">Swim Team V2 <span
                                         class="text-muted">(Feb 2018)</span></a></li>
-                        <li><a class="dropdown-item hover-underline" href="/personal/SwimTeamV1" target="_blank">Swim Team V1 <span
+                        <li><a class="dropdown-item hover-underline" href="/personal/SwimTeamV1" target="_blank">Swim
+                                Team V1 <span
                                         class="text-muted">(Jun 2017)</span></a></li>
                     </ul>
                 </li>
@@ -91,24 +102,27 @@ session_start();
                 </li>
                 <li class="nav-item hover-underline">
                     <a class="nav-link" aria-current="page" href="resume.pdf"
-                       target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-badge me-1 mb-1" viewBox="0 0 16 16">
+                       target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                             class="bi bi-person-badge me-1 mb-1" viewBox="0 0 16 16">
                             <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                             <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z"/>
-                        </svg>Resume</a>
+                        </svg>
+                        Resume</a>
                 </li>
                 <?php
                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']) { ?>
-                <li class="nav-item hover-underline">
-                    <a class="nav-link" href="node">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                             class="bi bi-speedometer2 me-1 mb-1" style="margin-bottom: 2px;" viewBox="0 0 16 16">
-                            <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
-                            <path fill-rule="evenodd"
-                                  d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
-                        </svg>
-                        Node.js
-                    </a>
-                </li>
+                    <li class="nav-item hover-underline">
+                        <a class="nav-link" href="node">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                 class="bi bi-speedometer2 me-1 mb-1" style="margin-bottom: 2px;" viewBox="0 0 16 16">
+                                <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+                                <path fill-rule="evenodd"
+                                      d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+                            </svg>
+                            Node.js
+                        </a>
+                    </li>
                 <?php } ?>
             </ul>
 
@@ -168,7 +182,7 @@ session_start();
                                   d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                         </svg>
                     </button>
-                    <div class="dropdown-menu dropdown-menu-end p-4"  id="signInDropdown">
+                    <div class="dropdown-menu dropdown-menu-end p-4" id="signInDropdown">
                         <form class="login-form" action="authenticate.php" method="post">
                             <div class="mb-3">
                                 <label for="loginFormUsername" class="form-label">Username:</label>
@@ -327,19 +341,37 @@ session_start();
                 <h1 class="fw-light text-black">Hello! Website still in progress</h1>
                 <img src="images/jaden.jpeg" class="rounded me-2" id="jaden" alt="Jaden">
                 <p class="text-start text-indent">
-                    Welcome! My name is Jaden Zaleski, and I am currently an undergraduate student at Miami University in Oxford, Ohio. I am studying Computer Science, and I plan to graduate in May 2023. I made this website to display some of the personal and school projects I have created over the past few years.
+                    Welcome! My name is Jaden Zaleski, and I am currently an undergraduate student at Miami University
+                    in Oxford, Ohio. I am studying Computer Science, and I plan to graduate in May 2023. I made this
+                    website to display some of the personal and school projects I have created over the past few years.
                 </p>
                 <p class="text-start text-indent">
-                    The Projects tab is an extensive showcase of my personal and school projects, providing a glimpse into the diverse range of work I have undertaken in the past few years. With a user-friendly dropdown menu, it allows easy navigation through the various projects I have completed. By clicking on a specific project, visitors will be directed to the project's dedicated page and a detailed description above each website, offering valuable insights and context into the project's purpose, objectives, critiques, and notable features.
+                    The Projects tab is an extensive showcase of my personal and school projects, providing a glimpse
+                    into the diverse range of work I have undertaken in the past few years. With a user-friendly
+                    dropdown menu, it allows easy navigation through the various projects I have completed. By clicking
+                    on a specific project, visitors will be directed to the project's dedicated page and a detailed
+                    description above each website, offering valuable insights and context into the project's purpose,
+                    objectives, critiques, and notable features.
                 </p>
                 <p class="text-start text-indent">
-                    The Documentation tab takes you to a page that has a detailed description of how I created this website. It includes information on the various hardware components I used, along with all of the software and frameworks needed to complete the site. I also explain how I connected the domain and got a free SSL.
+                    The <a href="Documentation.php" class="text-link">Documentation</a> tab takes you to a page that has a detailed description of how I created this
+                    website. It includes information on the various hardware components I used, along with all of the
+                    software and frameworks needed to complete the site. I also explain how I connected the domain and
+                    got a free SSL.
                 </p>
                 <p class="text-start text-indent">
-                    The Miami Server tab provides easy access to the Miami Linux server, a platform that houses individual HTML pages for each student. These pages serve as repositories for a wide range of website-specific projects and assignments I completed during my time at Miami. The server acts as a central hub for showcasing the diverse array of skills and accomplishments attained through various courses and projects at school. By navigating this tab, you get insight into the innovative and creative projects, spanning a multitude of web development and design projects.
+                    The <a href="https://ceclnx01.cec.miamioh.edu/~zaleskjr/" class="text-link">Miami Server</a> tab provides easy access to the Miami Linux server, a platform that houses
+                    individual HTML pages for each student. These pages serve as repositories for a wide range of
+                    website-specific projects and assignments I completed during my time at Miami. The server acts as a
+                    central hub for showcasing the diverse array of skills and accomplishments attained through various
+                    courses and projects at school. By navigating this tab, you get insight into the innovative and
+                    creative projects, spanning a multitude of web development and design projects.
                 </p>
                 <p class="text-start text-indent">
-                    This website offers users the ability to create personalized accounts, granting access to the Node.js tab. With your account, you gain the ability to see the creation date, username, and email associated with your profile. Additionally, the footer of the site provides links to explore my professional presence on GitHub and LinkedIn, as well as a direct way to contact me via email.
+                    This website offers users the ability to create personalized accounts, granting access to the
+                    Node.js tab. With your account, you gain the ability to see the creation date, username, and email
+                    associated with your profile. Additionally, the footer of the site provides links to explore my
+                    professional presence on <a href="https://github.com/jadenzaleski" class="text-link" target="_blank">GitHub</a> and <a href="https://www.linkedin.com/in/jaden-zaleski" class="text-link" target="_blank"> LinkedIn</a>, as well as a direct way to contact me via <a href="mailto:jadenzaleski@icloud.com?subject=Comments%20about%20website" target="_blank" class="text-link"> email</a>.
                 </p>
             </div>
         </div>
@@ -368,7 +400,7 @@ session_start();
                 </svg>
             </a>
             <a type="button" class="btn rounded-circle social-button-link"
-               href="https://www.linkedin.com/in/jaden-zaleski-2a29791aa/" target="_blank">
+               href="https://www.linkedin.com/in/jaden-zaleski" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                      class="bi bi-linkedin" viewBox="0 0 16 16">
                     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
