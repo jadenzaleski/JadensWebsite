@@ -357,7 +357,7 @@ session_start();
                     The <a href="Documentation.php" class="text-link">Documentation</a> tab takes you to a page that has a detailed description of how I created this
                     website. It includes information on the various hardware components I used, along with all of the
                     software and frameworks needed to complete the site. I also explain how I connected the domain and
-                    got a free SSL.
+                    got a free SSL certificate.
                 </p>
                 <p class="text-start text-indent">
                     The <a href="https://ceclnx01.cec.miamioh.edu/~zaleskjr/" class="text-link">Miami Server</a> tab provides easy access to the Miami Linux server, a platform that houses
