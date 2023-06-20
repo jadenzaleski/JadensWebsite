@@ -37,7 +37,7 @@ session_start();
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
+                <li class="nav-item hover-underline">
                     <a class="nav-link" aria-current="page" href="https://jadenzaleski.com">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                              class="bi bi-house me-1 mb-1" viewBox="0 0 16 16">
@@ -46,55 +46,73 @@ session_start();
                         Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle hover-underline" href="#" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                              class="bi bi-braces me-1 mb-1" viewBox="0 0 16 16">
                             <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
                         </svg>
-                        Projects - UPDATE NAV FROM HOME</a>
+                        Projects</a>
                     <ul class="dropdown-menu">
                         <li><h6 class="dropdown-header">School:</h6></li>
-                        <li><a class="dropdown-item" href="school/CSE383/finalProject" target="_blank">CSE383, Weather
-                                App <span
-                                    class="text-muted">(Oct 2022)</span></a></li>
+                        <li><a class="dropdown-item hover-underline" href="school/CSE383/finalProject" target="_blank">CSE383,
+                                Weather
+                                App <span class="text-muted">(Nov 2022)</span></a></li>
+                        <li>
+                        <li><a class="dropdown-item hover-underline"
+                               href="http://ceclnx01.cec.miamioh.edu/~zaleskjr/cse383/cse383_projects/hw10"
+                               target="_blank">CSE383, API Calculator <span class="text-muted">(Oct 2022)</span></a>
+                        </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
                         <li><h6 class="dropdown-header">Personal:</h6></li>
-                        <li><a class="dropdown-item" href="/Documentation.php">This Website <span
-                                    class="text-muted">(Dec 2022-Present)</span></a></li>
-                        <li><a class="dropdown-item" href="/personal/CanvasSquares" target="_blank">Canvas Squares <span
-                                    class="text-muted">(Apr 2022)</span></a></li>
-                        <li><a class="dropdown-item" href="/personal/CandyClicker" target="_blank">Candy Clicker <span
-                                    class="text-muted">(May 2020)</span></a></li>
-                        <li><a class="dropdown-item" href="/personal/ZaleskiPage" target="_blank">Zaleski Page <span
-                                    class="text-muted">(Oct 2019)</span></a></li>
-                        <li><a class="dropdown-item" href="/personal/ColorPicker" target="_blank">Color Picker <span
-                                    class="text-muted">(Mar 2018)</span></a></li>
-                        <li><a class="dropdown-item" href="/personal/SwimTeamV2" target="_blank">Swim Team V2 <span
-                                    class="text-muted">(Feb 2018)</span></a></li>
-                        <li><a class="dropdown-item" href="/personal/SwimTeamV1" target="_blank">Swim Team V1 <span
-                                    class="text-muted">(Jun 2017)</span></a></li>
+                        <li><a class="dropdown-item hover-underline" href="/Documentation.php">This Website <span
+                                        class="text-muted">(Dec 2022-Present)</span></a></li>
+                        <li><a class="dropdown-item hover-underline" href="/personal/CanvasSquares" target="_blank">Canvas
+                                Squares <span
+                                        class="text-muted">(Apr 2022)</span></a></li>
+                        <li><a class="dropdown-item hover-underline" href="/personal/CandyClicker" target="_blank">Candy
+                                Clicker <span
+                                        class="text-muted">(May 2020)</span></a></li>
+                        <li><a class="dropdown-item hover-underline" href="/personal/ColorPicker" target="_blank">Color
+                                Picker <span
+                                        class="text-muted">(Mar 2018)</span></a></li>
+                        <li><a class="dropdown-item disabled text-decoration-line-through" href="/personal/SwimTeamV2"
+                               target="_blank">Swim Team V2 <span
+                                        class="text-muted">(Feb 2018)</span></a></li>
+                        <li><a class="dropdown-item hover-underline" href="/personal/SwimTeamV1" target="_blank">Swim
+                                Team V1 <span
+                                        class="text-muted">(Jun 2017)</span></a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active fw-bolder" aria-current="page" href="/Documentation.php" target="_blank">
+                <li class="nav-item hover-underline">
+                    <a class="nav-link active fw-bolder" aria-current="page" href="/Documentation.php">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                              class="bi bi-info-circle me-1 mb-1" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                             <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                         </svg>
-                        Info</a>
+                        Documentation</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item hover-underline">
                     <a class="nav-link" aria-current="page" href="https://ceclnx01.cec.miamioh.edu/~zaleskjr/"
                        target="_blank"><img src="images/miami.png" height="16px" class="m-1 mb-2 ms-0" id="miami-logo"
                                             alt="miami logo">Miami Server</a>
                 </li>
+                <li class="nav-item hover-underline">
+                    <a class="nav-link" aria-current="page" href="resume.pdf"
+                       target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                             class="bi bi-person-badge me-1 mb-1" viewBox="0 0 16 16">
+                            <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z"/>
+                        </svg>
+                        Resume</a>
+                </li>
                 <?php
                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']) { ?>
-                    <li class="nav-item">
+                    <li class="nav-item hover-underline">
                         <a class="nav-link" href="node">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-speedometer2 me-1 mb-1" style="margin-bottom: 2px;" viewBox="0 0 16 16">
@@ -164,7 +182,7 @@ session_start();
                                   d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                         </svg>
                     </button>
-                    <div class="dropdown-menu dropdown-menu-end p-4"  id="signInDropdown">
+                    <div class="dropdown-menu dropdown-menu-end p-4" id="signInDropdown">
                         <form class="login-form" action="authenticate.php" method="post">
                             <div class="mb-3">
                                 <label for="loginFormUsername" class="form-label">Username:</label>
@@ -317,151 +335,52 @@ session_start();
 </div>
 
 <main class="container">
-    <section class="py-5 text-center container">
+    <section class="py-5 container">
         <div class="row py-lg-5">
             <div class="col-lg-10 col-md-10 mx-auto">
-                <h1 class="fw-light mb-3">Documentation</h1>
-                <nav class="navbar navbar-dark documentation-nav px-3 mb-3 navbar-expand-lg bg-body-tertiary sticky-top">
-                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#documentationNavbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="documentationNavbarNavDropdown">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Introduction">Introduction</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#Building" role="button" aria-expanded="false">Building</a>
-                            <ul class="dropdown-menu bg-black">
-                                <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-                                <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#Hardware" role="button" aria-expanded="false">Hardware</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-                                <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#Software" role="button" aria-expanded="false">Software</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-                                <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    </div>
-                </nav>
-                <div data-bs-spy="scroll" data-bs-target="#documentation-navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="px-1" tabindex="0">
-                    <h4 id="Introduction">Introduction</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus
-                        semper. Vitae nunc sed velit dignissim sodales ut. Enim sed faucibus turpis in eu mi bibendum neque
-                        egestas. Id volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis
-                        feugiat. Faucibus scelerisque eleifend donec pretium. In metus vulputate eu scelerisque felis
-                        imperdiet proin fermentum leo. Amet consectetur adipiscing elit duis tristique sollicitudin nibh
-                        sit. At tellus at urna condimentum mattis pellentesque id nibh tortor. Aliquet bibendum enim
-                        facilisis gravida. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Non pulvinar
-                        neque laoreet suspendisse. Sodales ut eu sem integer vitae justo eget magna fermentum. Aliquet eget
-                        sit amet tellus cras. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Sapien
-                        eget mi proin sed. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Fames
-                        ac turpis egestas integer eget. Enim praesent elementum facilisis leo.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus
-                        semper. Vitae nunc sed velit dignissim sodales ut. Enim sed faucibus turpis in eu mi bibendum neque
-                        egestas. Id volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis
-                        feugiat. Faucibus scelerisque eleifend donec pretium. In metus vulputate eu scelerisque felis
-                        imperdiet proin fermentum leo. Amet consectetur adipiscing elit duis tristique sollicitudin nibh
-                        sit. At tellus at urna condimentum mattis pellentesque id nibh tortor. Aliquet bibendum enim
-                        facilisis gravida. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Non pulvinar
-                        neque laoreet suspendisse. Sodales ut eu sem integer vitae justo eget magna fermentum. Aliquet eget
-                        sit amet tellus cras. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Sapien
-                        eget mi proin sed. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Fames
-                        ac turpis egestas integer eget. Enim praesent elementum facilisis leo.</p>
-                    <h4 id="Building">Building</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus
-                        semper. Vitae nunc sed velit dignissim sodales ut. Enim sed faucibus turpis in eu mi bibendum neque
-                        egestas. Id volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis
-                        feugiat. Faucibus scelerisque eleifend donec pretium. In metus vulputate eu scelerisque felis
-                        imperdiet proin fermentum leo. Amet consectetur adipiscing elit duis tristique sollicitudin nibh
-                        sit. At tellus at urna condimentum mattis pellentesque id nibh tortor. Aliquet bibendum enim
-                        facilisis gravida. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Non pulvinar
-                        neque laoreet suspendisse. Sodales ut eu sem integer vitae justo eget magna fermentum. Aliquet eget
-                        sit amet tellus cras. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Sapien
-                        eget mi proin sed. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Fames
-                        ac turpis egestas integer eget. Enim praesent elementum facilisis leo.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus
-                        semper. Vitae nunc sed velit dignissim sodales ut. Enim sed faucibus turpis in eu mi bibendum neque
-                        egestas. Id volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis
-                        feugiat. Faucibus scelerisque eleifend donec pretium. In metus vulputate eu scelerisque felis
-                        imperdiet proin fermentum leo. Amet consectetur adipiscing elit duis tristique sollicitudin nibh
-                        sit. At tellus at urna condimentum mattis pellentesque id nibh tortor. Aliquet bibendum enim
-                        facilisis gravida. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Non pulvinar
-                        neque laoreet suspendisse. Sodales ut eu sem integer vitae justo eget magna fermentum. Aliquet eget
-                        sit amet tellus cras. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Sapien
-                        eget mi proin sed. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Fames
-                        ac turpis egestas integer eget. Enim praesent elementum facilisis leo.</p>
-                    <h4 id="Hardware">Hardware</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus
-                        semper. Vitae nunc sed velit dignissim sodales ut. Enim sed faucibus turpis in eu mi bibendum neque
-                        egestas. Id volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis
-                        feugiat. Faucibus scelerisque eleifend donec pretium. In metus vulputate eu scelerisque felis
-                        imperdiet proin fermentum leo. Amet consectetur adipiscing elit duis tristique sollicitudin nibh
-                        sit. At tellus at urna condimentum mattis pellentesque id nibh tortor. Aliquet bibendum enim
-                        facilisis gravida. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Non pulvinar
-                        neque laoreet suspendisse. Sodales ut eu sem integer vitae justo eget magna fermentum. Aliquet eget
-                        sit amet tellus cras. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Sapien
-                        eget mi proin sed. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Fames
-                        ac turpis egestas integer eget. Enim praesent elementum facilisis leo.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus
-                        semper. Vitae nunc sed velit dignissim sodales ut. Enim sed faucibus turpis in eu mi bibendum neque
-                        egestas. Id volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis
-                        feugiat. Faucibus scelerisque eleifend donec pretium. In metus vulputate eu scelerisque felis
-                        imperdiet proin fermentum leo. Amet consectetur adipiscing elit duis tristique sollicitudin nibh
-                        sit. At tellus at urna condimentum mattis pellentesque id nibh tortor. Aliquet bibendum enim
-                        facilisis gravida. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Non pulvinar
-                        neque laoreet suspendisse. Sodales ut eu sem integer vitae justo eget magna fermentum. Aliquet eget
-                        sit amet tellus cras. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Sapien
-                        eget mi proin sed. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Fames
-                        ac turpis egestas integer eget. Enim praesent elementum facilisis leo.</p>
-                    <h4 id="Software">Software</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus
-                        semper. Vitae nunc sed velit dignissim sodales ut. Enim sed faucibus turpis in eu mi bibendum neque
-                        egestas. Id volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis
-                        feugiat. Faucibus scelerisque eleifend donec pretium. In metus vulputate eu scelerisque felis
-                        imperdiet proin fermentum leo. Amet consectetur adipiscing elit duis tristique sollicitudin nibh
-                        sit. At tellus at urna condimentum mattis pellentesque id nibh tortor. Aliquet bibendum enim
-                        facilisis gravida. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Non pulvinar
-                        neque laoreet suspendisse. Sodales ut eu sem integer vitae justo eget magna fermentum. Aliquet eget
-                        sit amet tellus cras. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Sapien
-                        eget mi proin sed. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Fames
-                        ac turpis egestas integer eget. Enim praesent elementum facilisis leo.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus
-                        semper. Vitae nunc sed velit dignissim sodales ut. Enim sed faucibus turpis in eu mi bibendum neque
-                        egestas. Id volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis
-                        feugiat. Faucibus scelerisque eleifend donec pretium. In metus vulputate eu scelerisque felis
-                        imperdiet proin fermentum leo. Amet consectetur adipiscing elit duis tristique sollicitudin nibh
-                        sit. At tellus at urna condimentum mattis pellentesque id nibh tortor. Aliquet bibendum enim
-                        facilisis gravida. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Non pulvinar
-                        neque laoreet suspendisse. Sodales ut eu sem integer vitae justo eget magna fermentum. Aliquet eget
-                        sit amet tellus cras. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Sapien
-                        eget mi proin sed. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Fames
-                        ac turpis egestas integer eget. Enim praesent elementum facilisis leo.</p>
-                </div>
+                <h1 class="fw-light mb-3 text-center">Documentation</h1>
+                <h4>Introduction</h4>
+                <p>
+                    The documentation of this website is divided into two parts: hardware and software. The website
+                    serves as a showcase of my personal work and displays my activities during my free time. To easily
+                    navigate the site, you can use the navigation bar, which provides access to all the site's features.
+                    By creating a personalized account, accessible through the navigation bar, you can explore the
+                    Node.js tab. With an account, you can view the creation date, username, and associated email of your
+                    profile. The footer of the site contains links to explore my professional presence on <a
+                            href="https://github.com/jadenzaleski" class="text-link" target="_blank">GitHub</a> and
+                    <a href="https://www.linkedin.com/in/jaden-zaleski" class="text-link" target="_blank"> LinkedIn</a>,
+                    as well as a direct contact option via email. Below is a description of each tab in the
+                    navigation bar:
+                </p>
+                <ul>
+                    <li>The <b>Projects</b> tab is an extensive showcase of my personal and school projects, offering a
+                        glimpse into the diverse range of work I have undertaken in recent years. It features a
+                        user-friendly dropdown menu for easy navigation through the various completed projects. Clicking
+                        on a specific project directs visitors to the project's dedicated page, which includes a
+                        detailed description of the project's purpose, objectives, critiques, and notable features.
+                    </li>
+                    <li>The <b>Documentation</b> tab is the current page you are on. It provides information on the
+                        hardware components used, as well as the required software and frameworks to complete the site.
+                        I also explain how I connected the domain and obtained a free SSL. The goal of this page is to
+                        provide sufficient information for someone to recreate these projects without having to spend
+                        hours searching the internet for specific application connections.
+                    </li>
+                    <li>The <b>Miami Server</b> tab offers easy access to the Miami Linux server, which hosts individual
+                        HTML pages for each student. These pages serve as repositories for a wide range of
+                        website-specific projects and assignments completed during my time at Miami. The server serves
+                        as a central hub, showcasing the diverse array of skills and accomplishments acquired through
+                        various courses and projects at school. Navigating this tab provides insight into innovative and
+                        creative projects spanning various web development and design endeavors.
+                    </li>
+                    <li>The <b>Resume</b> tab provides a direct link to my current resume.</li>
+                    <li>The <b>Profile</b> icon is used to create an account on the site. Having an account allows you
+                        to access the Node.js tab, as well as view the creation date, username, and associated email of
+                        your profile.
+                    </li>
+                    <li>The <b>Node.js</b> page is currently under development and primarily serves to demonstrate the
+                        possibility of running a JavaScript runtime environment within the Apache server's limitations.
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
