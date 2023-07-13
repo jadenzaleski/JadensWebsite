@@ -102,7 +102,7 @@ $(document).ready(function() {
 			var lon = data.results[0].position.lon;
 
 			b = $.ajax ({
-				url: "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&cnt=40&appid=***REMOVED***&units=imperial",
+				url: "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&cnt=40&appid=9948efc13165ac52f99080d8682b7e45&units=imperial",
 				method: "GET"
 			}).done(function(data) {
 				for (var i = 0; i < 41; i++) {
