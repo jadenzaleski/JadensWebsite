@@ -338,7 +338,7 @@ session_start();
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-8 col-md-10 mx-auto text-black">
-                <h1 class="fw-light text-black">Hello! Website still in progress</h1>
+                <h1 class="fw-light text-black">Hello!</h1>
                 <img src="images/jaden.jpeg" class="rounded me-2" id="jaden" alt="Jaden">
                 <p class="text-start text-indent">
                     Welcome! My name is Jaden Zaleski, and I am currently an undergraduate student at Miami University

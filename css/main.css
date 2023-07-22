@@ -219,3 +219,16 @@ footer {
 .text-link:hover {
     color: var(--jaden-blue);
 }
+
+#render {
+    max-width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#code {
+    background-color: rgba(34,40,49, .1);
+    padding: 10px;
+    border-radius: 10px;
+}

@@ -381,6 +381,131 @@ session_start();
                         possibility of running a JavaScript runtime environment within the Apache server's limitations.
                     </li>
                 </ul>
+                <h4 class="mt-5">Hardware</h4>
+                <p>
+                    The server consists of a <a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/"
+                                                class="text-link" target="_blank">Raspberry Pi</a>, a <a
+                            href="https://a.co/d/6b3m1zU" class="text-link" target="_blank">cooling component</a>, and a
+                    case.
+                    The Raspberry Pi used is a Raspberry Pi 4 Model B with 8GB of RAM and 32GB of storage.
+                    To ensure a faster and more stable connection,
+                    the computer is connected to the internet through an ethernet cable.
+                    The Raspberry Pi has a maximum operating temperature of 85ºC.
+                    To maintain proper cooling, I have installed a large heatsink with a fan on top,
+                    which provides plenty of cool air.
+                    Currently, the computer's operating temperature is 39ºC,
+                    which is cool enough for it to function properly without any concern.
+                    Below is a rendered image of the complete case, including all the necessary components.
+                </p>
+                <img src="/images/render.png" class="" id="render" alt="render of case">
+                <p>
+                    The case design was created using <a href="https://www.autodesk.com/products/fusion-360/"
+                                                         class="text-link" target="_blank">Fusion 360</a> and then 3D
+                    printed in PLA.
+                    After appropriate
+                    sanding and painting,
+                    the components are installed and held together securely with screws and
+                    spacers.
+                    The top part of the case is made of polycarbonate plastic, which I sanded down the edges to
+                    achieve a smooth, matte surface that aligns perfectly with the case.
+                    To prevent any slipping on
+                    smooth surfaces,
+                    adhesive pads have been added underneath the case to minimize fan vibrations and
+                    ensure stability.
+                </p>
+                <h4 class="mt-5">Software</h4>
+                <p>
+                    The Raspberry Pi serves as the foundation for this project, running smoothly on <a
+                            href="https://ubuntu.com" class="text-link" target="_blank">Ubuntu</a> 22.04.2 LTS
+                    with a comfortable 8GB of RAM and 32GB of storage. This setup provides enough resources for the
+                    intended tasks and ensures a stable environment for the various software components.
+                </p>
+                <p>
+                    The website's front end is constructed using a combination of Php, HTML, CSS, and JavaScript. To
+                    facilitate easier development and achieve a consistent look and feel across the site, I decided to
+                    use the <a href="https://getbootstrap.com" class="text-link" target="_blank">Bootstrap 5</a>
+                    framework. Bootstrap brings the added benefit of making the website fully
+                    responsive and mobile-friendly, which caters to users accessing the site from different devices.
+                </p>
+                <p>
+                    To manage incoming HTTP requests from Internet users and deliver the appropriate information within
+                    the project directory, the website relies on <a href="https://www.apache.org" class="text-link"
+                                                                    target="_blank">Apache2</a> software. Apache2 is a
+                    widely-used web
+                    server software known for its stability and performance. I followed <a
+                            href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04"
+                            class="text-link" target="_blank">this</a>
+                    tutorial from DigitalOcean which provides a step-by-step guide on how to install a LAMP stack
+                    (Linux, Apache, MySQL, PHP) on Ubuntu. The LAMP stack is a popular web development environment that
+                    allows users to run dynamic websites and web applications.
+                </p>
+                <p>
+                    For handling account data, a <a href="https://www.mysql.com" class="text-link"
+                                                    target="_blank">MySQL</a> server is utilized. This database stores
+                    all the relevant user
+                    information securely. To safeguard user passwords, I made use of the <a
+                            href="https://en.wikipedia.org/wiki/Argon2" class="text-link" target="_blank">Argon2</a>
+                    cryptographic hashing
+                    algorithm. This hashing mechanism ensures that the passwords remain protected and cannot be accessed
+                    by unauthorized parties outside the system. The implementation of the secure login system using this
+                    algorithm was guided by <a href="https://codeshack.io/secure-login-system-php-mysql/"
+                                               class="text-link" target="_blank">this tutorial.
+                </p>
+                <p>
+                    Additionally, I added <a href="https://nodejs.org" class="text-link" target="_blank">Node.js</a> on
+                    the Raspberry Pi, showcasing it as a proof of concept. Combining
+                    Node.js with the Apache server allows users to access Node.js applications through the same website.
+                    The process of integrating Node.js with Apache was made possible by following the instructions
+                    provided in <a
+                            href="https://www.ionos.com/digitalguide/websites/web-development/nodejs-for-a-website-with-apache-on-ubuntu/"
+                            class="text-link" target="_blank">this tutorial.
+                </p>
+                <p>
+                    I purchased a domain through <a href="https://www.godaddy.com" class="text-link">GoDaddy</a> and
+                    connected it to the current server's IP address. To ensure
+                    that the domain always points to the correct address, a script runs on the Raspberry Pi every ten
+                    minutes, updating the domain's IP address as needed. This dynamic DNS setup was created with the
+                    guidance of the tutorial available <a
+                            href="https://www.instructables.com/Quick-and-Dirty-Dynamic-DNS-Using-GoDaddy/"
+                            class="text-link" target="_blank">here</a>. Below is the recurring
+                    script:
+                </p>
+                <pre id="code"><code>#!/bin/bash
+
+mydomain=“example.com”
+myhostname="gateway"
+gdapikey="api_key:key_secret"
+logdest="local7.info"
+
+myip=`curl -s "https://api.ipify.org"`
+nsdata=`curl -s -X GET -H "Authorization: sso-key ${gdapikey}" "https://api.godaddy.com/v1/domains/${mydomain}/records/A/${myhostname}"`
+gdip=`echo $dnsdata | cut -d ',' -f 1 | tr -d '"' | cut -d ":" -f 2`
+echo "`date '+%Y-%m-%d %H:%M:%S'` - Current External IP is $myip, GoDaddy DNS IP is $gdip"
+
+if [ "$gdip" != "$myip" -a "$myip" != "" ]; then
+    echo "IP has changed!! Updating on GoDaddy"
+    curl -s -X PUT "https://api.godaddy.com/v1/domains/${mydomain}/records/A/${myhostname}" -H "Authorization: sso-key ${gdapikey}" -H "Content-Type: application/json" -d "[{\"data\": \"${myip}\"}]"
+    logger -p $logdest "Changed IP on ${hostname}.${mydomain} from ${gdip} to ${myip}"
+fi</code></pre>
+                <p>
+                    I obtained a free SSL certificate using <a href="https://certbot.eff.org" class="text-link"
+                                                               target="_blank">CertBot</a>. CertBot is a client that
+                    interfaces with a
+                    nonprofit Certificate Authority responsible for providing TLS certificates to a massive number of
+                    websites worldwide. The process of securing Apache with <a href="https://letsencrypt.org"
+                                                                               class="text-link" target="_blank">Let's
+                        Encrypt</a> using CertBot was documented
+                    in the tutorial <a
+                            href="https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04"
+                            class="text-link" target="_blank">here</a>,
+                    enabling the website to offer encrypted and secure communication for free.
+                </p>
+                <p>
+                    Lastly, I utilized <a href="https://github.com/jadenzaleski/JadensWebsite" class="text-link"
+                                          target="_blank">GitHub</a> to keep the project organized.
+                    Allowing for collaborative development, tracking
+                    changes, and ensuring a well-maintained code repository.
+                </p>
             </div>
         </div>
     </section>
