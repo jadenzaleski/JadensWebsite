@@ -101,7 +101,7 @@ session_start();
                                             alt="miami logo">Miami Server</a>
                 </li>
                 <li class="nav-item hover-underline">
-                    <a class="nav-link" aria-current="page" href="resume.pdf"
+                    <a class="nav-link" aria-current="page" href="school/Resume.pdf"
                        target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                              class="bi bi-person-badge me-1 mb-1" viewBox="0 0 16 16">
