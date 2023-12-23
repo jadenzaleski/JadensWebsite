@@ -78,9 +78,9 @@ session_start();
                         <li><a class="dropdown-item hover-underline" href="/personal/ColorPicker" target="_blank">Color
                                 Picker <span
                                         class="text-muted">(Mar 2018)</span></a></li>
-                        <li><a class="dropdown-item disabled text-decoration-line-through" href="/personal/SwimTeamV2"
-                               target="_blank">Swim Team V2 <span
-                                        class="text-muted">(Feb 2018)</span></a></li>
+<!--                        <li><a class="dropdown-item disabled text-decoration-line-through" href="/personal/SwimTeamV2"-->
+<!--                               target="_blank">Swim Team V2 <span-->
+<!--                                        class="text-muted">(Feb 2018)</span></a></li>-->
                         <li><a class="dropdown-item hover-underline" href="/personal/SwimTeamV1" target="_blank">Swim
                                 Team V1 <span
                                         class="text-muted">(Jun 2017)</span></a></li>
